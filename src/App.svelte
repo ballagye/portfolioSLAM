@@ -1,6 +1,11 @@
+<script>
+  import FractalTree from "./lib/FractalTree.svelte";
+</script>
+
 <div id="root">
   <div id="App">
     <div id="intro">
+      <div id="fractal-tree"><FractalTree /></div>
       <div class="type-title">
         <span class="intro-title">
           Bonjour, Je m'appelle
@@ -39,4 +44,13 @@
     </div>
   </div>
 </div>
+
 <!-- c'est root! -->
+
+<style>
+  #fractal-tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
