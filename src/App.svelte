@@ -6,14 +6,16 @@
   <div id="App">
     <div id="intro">
       <div id="fractal-tree"><FractalTree /></div>
-      <div class="type-title">
+
+      <div class="Typist">
         <span class="intro-title">
           Bonjour, Je m'appelle
           <span class="intro-name">Balla</span>
           .
         </span>
+        <span class="Blinking Cursor"></span>
         <div class="intro-subtitle">I create stuff sometimes.</div>
-        <div class="intro-subtitle">Je suis étudiant à l'efrei blablabla</div>
+        <div class="intro-desc">Je suis étudiant à l'efrei blablabla</div>
       </div>
     </div>
     <div class="section-header">
