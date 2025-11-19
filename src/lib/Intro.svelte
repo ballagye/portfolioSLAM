@@ -16,3 +16,17 @@
     <div class="intro-desc">Je suis étudiant à l'efrei blablabla</div>
   </div>
 </div>
+
+<style>
+  #intro {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 200px;
+    min-height: 100vh;
+  }
+</style>

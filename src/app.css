@@ -1,9 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --indigo: oklch(25.7% 0.09 281.288);
 }
 
 .App {
-  background-color: oklch(25.7% 0.09 281.288);
   display: flex;
-  margin: auto;
+  flex-direction: column;
+  background-color: #1e1a4d;
+}
+
+.fractal-container canvas {
+  display: inline;
 }

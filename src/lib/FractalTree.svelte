@@ -19,8 +19,8 @@
       ) {
         if (depth > MAX_DEPTH) return;
 
-        p.strokeWeight(length / 30);
-        p.stroke(length < 10 ? 105 : 0);
+        p.strokeWeight(length / 15);
+        p.stroke(255);
 
         let dir = direction;
         if (depth > 0) dir += bendAmount;
@@ -37,12 +37,12 @@
 
       p.setup = () => {
         p.createCanvas(SIZE, SIZE);
-        p.frameRate(30);
-        p.pixelDensity(1);
+        p.frameRate(60);
+        p.pixelDensity(3);
       };
 
       p.draw = () => {
-        p.background(255);
+        p.background("#1E1A4D");
 
         p.push();
         p.translate(SIZE / 2, SIZE / 2);
@@ -63,4 +63,4 @@
   });
 </script>
 
-<div bind:this={container}></div>
+<div class="fractal-container" bind:this={container}></div>
