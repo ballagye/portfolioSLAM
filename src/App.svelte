@@ -3,7 +3,7 @@
 </script>
 
 <div id="root">
-  <div id="App">
+  <div class="App">
     <div id="intro">
       <div id="fractal-tree"><FractalTree /></div>
 
@@ -48,11 +48,3 @@
 </div>
 
 <!-- c'est root! -->
-
-<style>
-  #fractal-tree {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
