@@ -4,6 +4,9 @@
 }
 :root {
   --indigo: oklch(25.7% 0.09 281.288);
+  --blue: #6ecfff;
+  --light-indigo: #858fad;
+  --lightest-indigo: #c6d2ff;
 }
 
 .App {
