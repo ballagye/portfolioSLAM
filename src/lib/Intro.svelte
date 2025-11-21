@@ -4,24 +4,31 @@
 
 <section class="intro">
   <div class="Typist">
-    <div>
+    <div id="intro-text">
       <h1>Bonjour, Je m'appelle</h1>
+      <h2 class="big-heading">Balla Gueye.</h2>
+      <h3 class="big-heading">Étudiant en BTS SIO à l'EFREI.</h3>
+      <p class="intro-subtitle">
+        Je développe des logiciels et automatise le déploiement de
+        configurations ou des services. précédemment stagiaire Alstom & SAIGON.
+      </p>
     </div>
   </div>
-  <div>
-    <h2 class="big-heading">Balla Gueye.</h2>
-  </div>
 
+  <div id="bgc-logo"><BgcLogo /></div>
   <span class=" Cursor blinking-cursor"></span>
-  <div class="intro-subtitle">Je développe des applications.</div>
-  <div class="intro-desc">Je suis étudiant à l'efrei blablabla</div>
 </section>
-<div id="bgc-logo"><BgcLogo /></div>
 
 <style>
   .intro {
     background-color: oklch(25.7% 0.09 281.288);
     margin: 202px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   div {
@@ -45,9 +52,24 @@
     color: oklch(93% 0.034 272.788);
     line-height: 1.1;
   }
+  h3.big-heading {
+    font-size: 65px;
+    font-family: "SF Pro Display", sans-serif;
+    color: #858fad;
+    line-height: 1.1;
+  }
   .big-heading {
     font-weight: 900;
     margin: 0px;
     font-size: 96px;
+  }
+
+  .intro-subtitle {
+    font-size: larger;
+    color: #858fad;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 500;
+    margin: 20px 0px 0px;
+    max-width: 390px;
   }
 </style>
