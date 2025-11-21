@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +10,11 @@
   --blue: #6ecfff;
   --light-indigo: #858fad;
   --lightest-indigo: #c6d2ff;
+  --font-family: "IBM Plex Mono", monospace;
 }
 
 .App {
   display: flex;
-  flex-direction: column;
-  background-color: #1e1a4d;
-}
-
-.fractal-container canvas {
-  display: inline;
+  flex-direction: row;
+  background-color: oklch(25.7% 0.09 281.288);
 }

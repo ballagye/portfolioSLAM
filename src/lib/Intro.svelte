@@ -1,14 +1,14 @@
 <script>
-  import FractalTree from "./FractalTree.svelte";
+  import BgcLogo from "./components/BgcLogo.svelte";
 </script>
 
 <div id="intro">
-  <div id="fractal-tree"><FractalTree /></div>
+  <div id="bgc-logo"><BgcLogo /></div>
 
   <div class="Typist">
     <span class="intro-title">
       Bonjour, Je m'appelle
-      <span class="intro-name">Balla</span>
+      <span class="intro-name">Balla Gueye.</span>
     </span>
     <span class=" Cursor blinking-cursor"></span>
     <div class="intro-subtitle">Je développe des applications.</div>
@@ -30,22 +30,22 @@
   }
   .Typist {
     font-size: 76px;
+    font-weight: bold;
+    font-family: "SF Pro Display", sans-serif;
     color: oklch(87% 0.065 274.039);
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
   }
 
   .intro-name {
-    color: #6ecfff;
+    font-size: 96px;
+    font-weight: 900;
+    font-family: "SF Pro Display", sans-serif;
+
+    color: #eef2ff;
   }
   .intro-title {
-    font-weight: bold;
+    font-weight: 300;
+    font-family: "IBM Plex Mono", monospace;
+    color: #6ecfff;
   }
   .intro-subtitle {
     color: #858fad;
