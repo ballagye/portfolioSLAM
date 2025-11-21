@@ -3,20 +3,8 @@
 </script>
 
 <div id="root">
-  <div class="App">
+  <main class="App">
     <div id="intro"><Intro /></div>
-
-    <div class="Typist">
-      <span class="intro-title">
-        Bonjour, Je m'appelle
-        <span class="intro-name">Balla</span>
-        .
-      </span>
-      <span class="Blinking Cursor"></span>
-      <div class="intro-subtitle">I create stuff sometimes.</div>
-      <div class="intro-desc">Je suis étudiant à l'efrei blablabla</div>
-    </div>
-
     <div class="section-header">
       <span class="section-title"> / a propos</span>
     </div>
@@ -43,7 +31,7 @@
       <div class="section-header"></div>
       <!-- Je m'en occupe plus tard -->
     </div>
-  </div>
+  </main>
 </div>
 
 <!-- c'est root! -->
