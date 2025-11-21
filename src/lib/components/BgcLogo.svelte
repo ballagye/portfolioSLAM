@@ -1,6 +1,6 @@
 <video
   width="600"
-  height="6mais g00"
+  height="600"
   src="\src\assets\bgcc.webm"
   muted
   autoplay
