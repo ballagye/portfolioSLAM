@@ -1,4 +1,4 @@
-<div class="section-header">
+<div id="section-header" class="sectionheaderbts">
   <h3 class="heading">/ BTS SIO</h3>
 </div>
 
@@ -11,11 +11,11 @@
     font-weight: 700;
   }
 
-  .section-header {
+  #section-header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 202px;
+    margin: 0px 202px;
     padding: 0;
   }
 
@@ -28,7 +28,7 @@
     top: -10px;
     width: 300px;
     height: 1px;
-    margin-left: 20px;
+    margin-left: 25px;
     background-color: var(--lightest-indigo);
   }
 </style>
