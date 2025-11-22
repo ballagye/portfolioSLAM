@@ -2,7 +2,7 @@
   import BgcLogo from "./components/BgcLogo.svelte";
 </script>
 
-<section class="intro">
+<div id="intro">
   <div class="Typist">
     <div id="intro-text">
       <p>Bonjour, je m'appelle</p>
@@ -15,13 +15,12 @@
       </p>
     </div>
   </div>
-
   <div id="bgc-logo"><BgcLogo /></div>
   <span class=" Cursor blinking-cursor"></span>
-</section>
+</div>
 
 <style>
-  .intro {
+  #intro {
     background-color: oklch(25.7% 0.09 281.288);
     margin: 202px;
     display: flex;
@@ -63,12 +62,6 @@
     font-family: "SF Pro Display", sans-serif;
     color: #858fad;
     line-height: 1.3;
-  }
-  h3.big-heading {
-    font-size: 65px;
-    font-family: "SF Pro Display", sans-serif;
-    color: #858fad;
-    line-height: 1.1;
   }
 
   .intro-subtitle {

@@ -1,13 +1,16 @@
 <script>
+  import SectionHeader from "./lib/components/SectionHeader.svelte";
   import Intro from "./lib/Intro.svelte";
 </script>
 
 <div id="root">
   <main class="App">
-    <div id="intro"><Intro /></div>
-    <div class="section-header">
-      <span class="section-title"> / a propos</span>
-    </div>
+    <section class="intro">
+      <div id="intro"><Intro /></div>
+    </section>
+    <section class="bts-sio">
+      <div class="section-header"><SectionHeader /></div>
+    </section>
     <div class="about-content">
       <div class="about-description">
         <p></p>
