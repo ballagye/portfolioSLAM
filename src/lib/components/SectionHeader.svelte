@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -5px;
+    top: -10px;
     width: 300px;
     height: 1px;
     margin-left: 20px;
