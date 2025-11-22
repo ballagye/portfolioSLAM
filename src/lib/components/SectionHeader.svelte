@@ -4,7 +4,6 @@
 
 <style>
   .heading {
-    display: flex;
     margin-left: 20px;
     font-family: "SF Pro Display", sans-serif;
     color: oklch(96.2% 0.018 272.314);
@@ -14,8 +13,22 @@
 
   .section-header {
     display: flex;
-    width: 100vw;
+    flex-direction: row;
+    width: 100%;
     margin: 202px;
     padding: 0;
+  }
+
+  .heading::after {
+    content: "";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--lightest-indigo);
   }
 </style>
