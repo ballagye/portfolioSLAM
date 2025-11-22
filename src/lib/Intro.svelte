@@ -5,12 +5,13 @@
 <section class="intro">
   <div class="Typist">
     <div id="intro-text">
-      <p>Bonjour, Je m'appelle</p>
+      <p>Bonjour, je m'appelle</p>
       <h1 class="big-heading">Balla Gueye.</h1>
       <h2 class="big-heading">Étudiant en BTS SIO à l'EFREI.</h2>
       <p class="intro-subtitle">
         Je développe des logiciels et automatise le déploiement de
-        configurations ou des services. précédemment stagiaire Alstom & SAIGON.
+        configurations ou des services, précédemment stagiaire à Alstom &
+        SAIGON.
       </p>
     </div>
   </div>
