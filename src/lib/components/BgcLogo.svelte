@@ -1,5 +1,5 @@
 <video
-  width="700"
+  width="600"
   height="700"
   src="\src\assets\bgcc.webm"
   muted

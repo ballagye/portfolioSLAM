@@ -81,6 +81,8 @@
   .sisr-text {
     display: inline-block;
     text-align: right;
+    font-family: "SF Pro Display", sans-serif;
+    color: var(--light-indigo);
   }
   .sisr-overline {
     font-family: "IBM Plex Mono";
@@ -95,5 +97,8 @@
   #bts-sio {
     margin: 0px 202px;
     padding: 100px 0px;
+  }
+  .sisr-section {
+    list-style-type: none;
   }
 </style>
