@@ -8,6 +8,7 @@
   --lightest-indigo: oklch(96.2% 0.018 272.314);
   --font-family: "IBM Plex Mono", monospace;
   --font-family: "SF Pro Display", sans-serif;
+  --indigo-dark: #312c85;
 }
 body {
   background-color: oklch(25.7% 0.09 281.288);
