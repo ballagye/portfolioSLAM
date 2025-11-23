@@ -22,13 +22,14 @@
 <style>
   #intro {
     background-color: oklch(25.7% 0.09 281.288);
-    margin: 202px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     padding: 0;
     justify-content: center;
     align-items: center;
+    padding: 15em 0em 12em;
   }
 
   div {
