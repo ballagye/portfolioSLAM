@@ -48,6 +48,8 @@
       <ul class="sisr-tech-list">
         <li>Machines Virtuelles</li>
         <li>Linux</li>
+        <li>Debian</li>
+        <li>Ubuntu</li>
         <li>Windows Server</li>
       </ul>
     </div>
@@ -114,5 +116,16 @@
     grid-area: 1 / 6 / -1 / -1;
     position: relative;
     z-index: 1;
+  }
+  .sisr-tech-list {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    margin: 27px 0px 10px;
+    padding: 0px;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: "IBM Plex mono";
+    color: var(--light-indigo);
   }
 </style>
