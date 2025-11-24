@@ -1,5 +1,6 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
+  import Images from "../../Images.svelte";
 </script>
 
 <section id="bts-sio">
@@ -29,8 +30,8 @@
           <p class="sisr-overline">SISR</p>
           <h3 class="sisr-title">Réseaux</h3>
         </div>
-        <div class="sisr-image"></div>
       </div>
+      <div class="sisr-image"><Images /></div>
     </li>
     <div class="sisr-description">
       <ul class="sisr-text">
@@ -65,7 +66,6 @@
     font-family: "SF Pro Display", sans-serif;
   }
   .sisr-description {
-    text-align: end;
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
     transition: var(--transition);
     position: relative;
@@ -80,14 +80,14 @@
   }
   .sisr-text {
     display: inline-block;
-    text-align: right;
+
     font-family: "SF Pro Display", sans-serif;
     color: var(--light-indigo);
   }
   .sisr-overline {
     font-family: "IBM Plex Mono";
     color: var(--blue);
-    margin-right: 5px;
+    margin-right: 0px;
     padding: 0;
   }
   .sisr-title {
@@ -100,5 +100,16 @@
   }
   .sisr-section {
     list-style-type: none;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+  .sisr-image {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 1;
   }
 </style>
