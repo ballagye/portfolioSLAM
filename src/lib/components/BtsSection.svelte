@@ -29,18 +29,21 @@
         <div>
           <p class="sisr-overline">SISR</p>
           <h3 class="sisr-title">Réseaux</h3>
+          <div class="sisr-description">
+            <ul class="sisr-text">
+              <li>
+                Gestion des systèmes d’exploitation et des services réseaux
+              </li>
+              <li>Gestion et la maintenance des infrastructures réseau</li>
+              <li>Optimisation des performances d’un réseau</li>
+              <li>Sécurisations des infrastructures</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="sisr-image"><Images /></div>
     </li>
-    <div class="sisr-description">
-      <ul class="sisr-text">
-        <li>Gestion des systèmes d’exploitation et des services réseaux</li>
-        <li>Gestion et la maintenance des infrastructures réseau</li>
-        <li>Optimisation des performances d’un réseau</li>
-        <li>Sécurisations des infrastructures</li>
-      </ul>
-    </div>
+
     <div>
       <ul class="sisr-tech-list">
         <li>Machines Virtuelles</li>
@@ -102,7 +105,7 @@
     list-style-type: none;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
   .sisr-image {
