@@ -101,12 +101,4 @@
   .sisr-section {
     list-style-type: none;
   }
-  li::before {
-    content: "▹";
-    position: absolute;
-    left: 0px;
-    color: var(--blue);
-    font-size: var(--fz-sm);
-    line-height: 12px;
-  }
 </style>
