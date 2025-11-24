@@ -80,7 +80,8 @@
     background-color: var(--indigo-dark);
   }
   .sisr-content {
-    grid-column: 7 / -1;
+    grid-area: 1 / 2 / -1 / 8;
+    position: relative;
     text-align: right;
   }
   .sisr-text {
@@ -107,7 +108,7 @@
     list-style-type: none;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+
     align-items: center;
   }
   .sisr-image {
@@ -115,7 +116,7 @@
     transition: var(--transition);
     grid-area: 1 / 6 / -1 / -1;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   .sisr-tech-list {
     display: flex;
