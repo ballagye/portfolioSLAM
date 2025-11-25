@@ -1,6 +1,6 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
-  import Images from "../../Images.svelte";
+  import Images from "./Images.svelte";
 </script>
 
 <section id="bts-sio">
@@ -8,16 +8,16 @@
   <div class="bts-desc">
     <p>
       Le Brevet de Technicien Supérieur aux Services Informatiques aux
-      Organisations (BTS SIO) est un programme de niveau Bac+2 et s’adresse aux
-      personnes qui souhaitent se former en deux ans aux métiers
+      Organisations (BTS SIO) est un <br />programme de niveau Bac+2 et
+      s’adresse aux personnes qui souhaitent se former en deux ans aux métiers
       d’administrateurs réseau ou de développeur
     </p>
     <br />
     <p>
       Il peut-être réalisable soit en alternance d’une durée de 12 ou de 24 ou
-      alors en initial avec un minimum de 10 semaines de stages obligatoire en
-      entreprise d’une durée de 2 à 3 mois, afin de s’initier aux réalités du
-      domaine professionnel.
+      alors en initial avec un minimum de <br />10 semaines de stages
+      obligatoire en entreprise d’une durée de 2 à 3 mois, afin de s’initier aux
+      réalités du domaine professionnel.
     </p>
     <br />
     <p>Le BTS SIO propose deux spécialités :</p>
@@ -66,9 +66,9 @@
   p {
     margin: 0px 25px 0px 25px;
     font-family: "SF Pro Display", sans-serif;
-    font-size: 400;
     color: oklch(96.2% 0.018 272.314);
     font-family: "SF Pro Display", sans-serif;
+    font-size: 24px;
   }
   .sisr-description {
     box-shadow: 0 10px 30px -15px var(--navy-shadow);

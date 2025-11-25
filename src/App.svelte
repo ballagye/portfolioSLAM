@@ -2,6 +2,7 @@
   import SectionHeader from "./lib/components/SectionHeader.svelte";
   import Intro from "./lib/Intro.svelte";
   import BtsSection from "./lib/components/BtsSection.svelte";
+  import BtsSectioncopy from "./lib/components/BtsSection copy.svelte";
 </script>
 
 <div id="root">
@@ -12,6 +13,7 @@
     <section class="bts-sio">
       <div id="bts-sio"><BtsSection /></div>
     </section>
+    <section><BtsSectioncopy /></section>
     <div class="about-content">
       <div class="about-description">
         <p></p>
@@ -39,3 +41,6 @@
 </div>
 
 <!-- c'est root! -->
+
+<style>
+</style>

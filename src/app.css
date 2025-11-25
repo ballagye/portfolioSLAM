@@ -6,8 +6,8 @@
   --blue: #6ecfff;
   --light-indigo: #858fad;
   --lightest-indigo: oklch(96.2% 0.018 272.314);
-  --font-family: "IBM Plex Mono", monospace;
-  --font-family: "SF Pro Display", sans-serif;
+  --ibm: "IBM Plex Mono", monospace;
+  --sfpro: "SF Pro Display", sans-serif;
   --indigo-dark: #312c85;
 }
 body {
