@@ -39,6 +39,15 @@
               <li>Sécurisations des infrastructures</li>
             </ul>
           </div>
+          <div class="tech-stack">
+            <ul class="tech-list">
+              <li>Machines Virtuelles</li>
+              <li>Linux</li>
+              <li>Debian</li>
+              <li>Ubuntu</li>
+              <li>Windows Server</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -86,5 +95,19 @@
     margin-left: -60px;
     z-index: 2;
     border-radius: 2px;
+  }
+  .tech-list {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    margin: 27px 0px 10px;
+    padding: 0px;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: "IBM Plex mono";
+    color: var(--light-indigo);
+  }
+  .tech-stack {
+    display: flex;
   }
 </style>

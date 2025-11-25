@@ -2,7 +2,7 @@
   import SectionHeader from "./lib/components/SectionHeader.svelte";
   import Intro from "./lib/Intro.svelte";
   import BtsSection from "./lib/components/BtsSection.svelte";
-  import BtsSectioncopy from "./lib/components/BtsSection copy.svelte";
+  import BtsSectioncopy2 from "./lib/components/BtsSection copy 2.svelte";
 </script>
 
 <div id="root">
@@ -13,7 +13,7 @@
     <section class="bts-sio">
       <div id="bts-sio"><BtsSection /></div>
     </section>
-    <section><BtsSectioncopy /></section>
+    <section><BtsSectioncopy2 /></section>
     <div class="about-content">
       <div class="about-description">
         <p></p>
@@ -30,7 +30,7 @@
     <div id="bts-sio">
       <!-- Je m'en occupe plus tard -->
       <div class="section-header">
-        <span class="section-title"> / BTS SIO</span>
+        <span class="section-title"></span>
       </div>
     </div>
     <div id="projets">
