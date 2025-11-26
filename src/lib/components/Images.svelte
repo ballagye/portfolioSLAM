@@ -1,7 +1,7 @@
 <img
   src="\src\assets\debian.jpg"
   alt="debian"
-  width="600"
+  width="635"
   height=""
   class="debian"
 />
