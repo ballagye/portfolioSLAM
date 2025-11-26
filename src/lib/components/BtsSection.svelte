@@ -140,7 +140,7 @@
     flex-wrap: wrap;
     gap: 17px;
     list-style: none;
-    margin: 35px 0px 10px;
+    margin: 25px 0px 10px;
     padding: 0px;
     z-index: 2;
     font-family: var(--ibm);
@@ -157,5 +157,6 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    margin-top: 10px;
   }
 </style>
