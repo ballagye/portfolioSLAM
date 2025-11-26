@@ -13,6 +13,8 @@
   --dark-indigo: oklch(35.9% 0.144 278.697);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   --indigo-500: oklch(58.5% 0.233 277.117);
+  --dark-blue: oklch(25.7% 0.09 281.288);
+  --border-radius: 4px;
 }
 body {
   background-color: oklch(25.7% 0.09 281.288);

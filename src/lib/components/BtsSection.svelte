@@ -157,7 +157,7 @@
     position: relative;
     padding: 15px 47px;
 
-    z-index: 2;
+    z-index: 4;
     border-radius: 2px;
     font-family: var(--sfpro);
     color: var(--light-indigo2);
@@ -234,7 +234,7 @@
     padding: 15px 47px;
     font-size: 13px;
 
-    z-index: 2;
+    z-index: 4;
     border-radius: 2px;
     font-family: var(--sfpro);
     color: var(--light-indigo2);
@@ -262,7 +262,7 @@
     list-style: none;
     margin: 25px 0px 10px;
     padding: 0px;
-    z-index: 2;
+    z-index: 4;
     font-family: var(--ibm);
     color: var(--light-indigo2);
     font-size: 15px;
@@ -277,5 +277,35 @@
 
   .slam-logo:hover {
     color: var(--blue);
+  }
+  .sisr-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: 3;
+    transition: var(--transition);
+    background-color: var(--dark-blue);
+    mix-blend-mode: screen;
+    border-radius: var(--border-radius);
+  }
+  .sisr-image:hover::before {
+    background: transparent;
+  }
+  .slam-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: 3;
+    transition: var(--transition);
+    background-color: var(--dark-blue);
+    mix-blend-mode: screen;
+    border-radius: var(--border-radius);
+  }
+  .slam-image:hover::before {
+    background: transparent;
   }
 </style>
