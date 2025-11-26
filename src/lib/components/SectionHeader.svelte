@@ -4,7 +4,6 @@
 
 <style>
   .heading {
-    margin-left: 20px;
     font-family: "SF Pro Display", sans-serif;
     color: oklch(96.2% 0.018 272.314);
     font-size: 30px;

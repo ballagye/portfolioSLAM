@@ -1,7 +1,7 @@
 <video
-  width="700"
+  width="625"
   height="700"
-  src="\src\assets\bgcc.webm"
+  src="\src\assets\bgc.mp4"
   muted
   autoplay
   loop

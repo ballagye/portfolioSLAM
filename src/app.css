@@ -4,11 +4,13 @@
 :root {
   --indigo: oklch(25.7% 0.09 281.288);
   --blue: #6ecfff;
-  --light-indigo: #858fad;
+  --light-indigo2: #858fad;
+  --light-indigo: oklch(93% 0.034 272.788);
   --lightest-indigo: oklch(96.2% 0.018 272.314);
   --ibm: "IBM Plex Mono", monospace;
   --sfpro: "SF Pro Display", sans-serif;
   --indigo-dark: #312c85;
+  --dark-indigo: oklch(35.9% 0.144 278.697);
 }
 body {
   background-color: oklch(25.7% 0.09 281.288);
@@ -16,6 +18,7 @@ body {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
+
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
 }
