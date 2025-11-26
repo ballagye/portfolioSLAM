@@ -11,7 +11,7 @@
         <h2 class="big-heading">Étudiant en BTS SIO à l'EFREI.</h2>
         <p class="intro-subtitle">
           Je développe des logiciels et automatise le déploiement de
-          configurations ou des services, anciennement stagiaire chez Alstom
+          configurations ou des services, anciennement stagiaire chez Alstom et
           SAIGON.
         </p>
       </div>
