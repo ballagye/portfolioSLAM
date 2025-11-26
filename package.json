@@ -20,6 +20,7 @@
     "vite": "^7.2.2"
   },
   "dependencies": {
+    "@jis3r/icons": "^1.11.0",
     "@lucide/svelte": "^0.555.0",
     "p5": "^2.1.1"
   }

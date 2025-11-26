@@ -1,8 +1,8 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
   import Images from "./Images.svelte";
-  import { Server } from "@lucide/svelte";
-  import { Network } from "@lucide/svelte";
+  import { ServerCog } from "@jis3r/icons";
+  import { SquareTerminal } from "@jis3r/icons";
 </script>
 
 <section id="bts-sio">
@@ -57,7 +57,10 @@
           <li>Ubuntu</li>
           <li>Windows Server</li>
         </ul>
-        <div class="sisr-logo"><Server /> <Network /></div>
+        <div class="logos">
+          <div class="sisr-logo"><ServerCog /></div>
+          <div class="sisr-logo"><SquareTerminal /></div>
+        </div>
       </div>
     </div>
     <div class="sisr-image"><Images /></div>
@@ -145,9 +148,14 @@
     font-size: 15px;
   }
   .sisr-logo {
+    color: var(--light-indigo);
+  }
+  .sisr-logo:hover {
+    color: var(--blue);
+  }
+  .logos {
     display: flex;
     justify-content: flex-end;
-    color: var(--light-indigo);
     gap: 10px;
   }
 </style>
