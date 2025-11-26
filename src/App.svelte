@@ -38,6 +38,3 @@
 </div>
 
 <!-- c'est root! -->
-
-<style>
-</style>

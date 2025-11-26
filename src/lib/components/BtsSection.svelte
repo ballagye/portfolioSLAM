@@ -1,6 +1,8 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
   import Images from "./Images.svelte";
+  import { Server } from "@lucide/svelte";
+  import { Network } from "@lucide/svelte";
 </script>
 
 <section id="bts-sio">
@@ -32,19 +34,31 @@
   </div>
   <div class="sisr">
     <div class="sisr-content">
-      <ul class="options-list">
-        <li>
-          Gestion des <span class="colored"> systèmes d’exploitation</span> et des
-          services réseaux
-        </li>
-        <li>
-          Gestion et la maintenance des infrastructures <span class="colored"
-            >réseau</span
-          >
-        </li>
-        <li>Optimisation des performances d’un réseau</li>
-        <li>Sécurisations des infrastructures</li>
-      </ul>
+      <div>
+        <p class="overline">SISR</p>
+        <h3 class="option-title">Réseaux</h3>
+        <ul class="options-list">
+          <li>
+            Gestion des <span class="colored"> systèmes d’exploitation</span> et
+            des services réseaux
+          </li>
+          <li>
+            Gestion et la maintenance des infrastructures <span class="colored"
+              >réseau</span
+            >
+          </li>
+          <li>Optimisation des performances d’un réseau</li>
+          <li>Sécurisations des infrastructures</li>
+        </ul>
+        <ul class="sisr-tech-list">
+          <li>Machine Virtuelles</li>
+          <li>Linux</li>
+          <li>Debian</li>
+          <li>Ubuntu</li>
+          <li>Windows Server</li>
+        </ul>
+        <div class="sisr-logo"><Server /> <Network /></div>
+      </div>
     </div>
     <div class="sisr-image"><Images /></div>
   </div>
@@ -60,23 +74,25 @@
   }
 
   #bts-sio {
-    margin: 150px;
+    margin: 0px auto;
+    max-width: 1100px;
   }
   .sisr {
     display: grid;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     grid-template-columns: repeat(12, 1fr);
   }
   .sisr-content {
     position: relative;
-    grid-column: 7 / 11;
+    grid-column: 7 / -1;
     grid-row-start: 1;
     grid-row-end: -1;
   }
   .sisr-image {
     position: relative;
-    grid-column: 2 / 8;
+    grid-column: 1 / 8;
     grid-row-start: 1;
     grid-row-end: -1;
   }
@@ -84,13 +100,13 @@
     background-color: var(--dark-indigo);
     position: relative;
     padding: 15px 47px;
-    margin-left: -60px;
+
     z-index: 2;
     border-radius: 2px;
     font-family: var(--sfpro);
     color: var(--light-indigo2);
     font-weight: 400;
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .bts-desc {
@@ -98,5 +114,40 @@
   }
   .colored {
     color: var(--blue);
+  }
+  ul {
+    margin: 0;
+  }
+  .overline {
+    margin: 10px 0px;
+    text-align: right;
+    font-family: var(--ibm);
+    color: var(--blue);
+  }
+  .option-title {
+    text-align: right;
+    font-family: var(--sfpro);
+    color: var(--light-indigo);
+    margin: 0px 0px 20px;
+  }
+  .sisr-tech-list {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 17px;
+    list-style: none;
+    margin: 35px 0px 10px;
+    padding: 0px;
+    z-index: 2;
+    font-family: var(--ibm);
+    color: var(--light-indigo2);
+    font-size: 15px;
+  }
+  .sisr-logo {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--light-indigo);
+    gap: 10px;
   }
 </style>

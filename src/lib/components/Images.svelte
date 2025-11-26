@@ -1,1 +1,7 @@
-<img src="\src\assets\debian.jpg" alt="debian" width="800" class="debian" />
+<img
+  src="\src\assets\debian.jpg"
+  alt="debian"
+  width="600"
+  height=""
+  class="debian"
+/>
