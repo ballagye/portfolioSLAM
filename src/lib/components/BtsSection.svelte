@@ -50,8 +50,14 @@
               >réseau</span
             >
           </li>
-          <li>Optimisation des performances d’un réseau</li>
-          <li>Sécurisations des infrastructures</li>
+          <li>
+            Optimisation des <span class="colored"
+              >performances d’un réseau</span
+            >
+          </li>
+          <li>
+            <span class="colored">Sécurisations</span> des infrastructures
+          </li>
         </ul>
         <ul class="sisr-tech-list">
           <li>Machine Virtuelles</li>
@@ -76,7 +82,7 @@
         <h3 class="option-title-slam">Développment</h3>
         <ul class="slam-options-list">
           <li>
-            Développer des compétences en développement d’ <span class="colored"
+            Développer des compétences en développement d’<span class="colored"
               >applications
             </span>
             et de
@@ -86,7 +92,7 @@
             Conception des <span class="colored"> bases de données </span>
           </li>
           <li>
-            <span class="colored">Programmation </span>dans divers langages
+            <span class="colored">Programmation </span> dans divers langages
           </li>
           <li>
             Tests et déploiement des <span class="colored"
