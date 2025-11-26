@@ -1,8 +1,11 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
   import Images from "./Images.svelte";
+  import SlamImage from "./SlamImage.svelte";
   import { ServerCog } from "@jis3r/icons";
   import { SquareTerminal } from "@jis3r/icons";
+  import { ChevronsLeftRight } from "@jis3r/icons";
+  import { ChartNoAxesGantt } from "@jis3r/icons";
 </script>
 
 <section id="bts-sio">
@@ -65,6 +68,49 @@
     </div>
     <div class="sisr-image"><Images /></div>
   </div>
+
+  <div class="slam">
+    <div class="slam-content">
+      <div>
+        <p class="slam-overline">SLAM</p>
+        <h3 class="option-title-slam">Développment</h3>
+        <ul class="slam-options-list">
+          <li>
+            Développer des compétences en développement d’ <span class="colored"
+              >applications
+            </span>
+            et de
+            <span class="colored">logiciels </span>
+          </li>
+          <li>
+            Conception des <span class="colored"> bases de données </span>
+          </li>
+          <li>
+            <span class="colored">Programmation </span>dans divers langages
+          </li>
+          <li>
+            Tests et déploiement des <span class="colored"
+              >solutions logicielles</span
+            >
+          </li>
+        </ul>
+        <ul class="slam-tech-list">
+          <li>VS Code</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Web</li>
+          <li>SQL</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+        </ul>
+        <div class="logos-slam">
+          <div class="slam-logo"><ChevronsLeftRight /></div>
+          <div class="slam-logo"><ChartNoAxesGantt /></div>
+        </div>
+      </div>
+    </div>
+    <div class="slam-image"><SlamImage /></div>
+  </div>
 </section>
 
 <style>
@@ -86,6 +132,7 @@
     justify-content: center;
     gap: 10px;
     grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 100px;
   }
   .sisr-content {
     position: relative;
@@ -158,5 +205,71 @@
     justify-content: flex-end;
     gap: 10px;
     margin-top: 10px;
+  }
+  .slam {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 100px;
+  }
+  .slam-content {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+  }
+  .slam-image {
+    grid-area: 1/ 6 / -1 / -1;
+    position: relative;
+  }
+  .slam-options-list {
+    background-color: var(--dark-indigo);
+    position: relative;
+    padding: 15px 47px;
+    font-size: 13px;
+
+    z-index: 2;
+    border-radius: 2px;
+    font-family: var(--sfpro);
+    color: var(--light-indigo2);
+    font-weight: 400;
+    font-size: 17px;
+  }
+  .slam-overline {
+    margin: 10px 0px;
+    text-align: left;
+    font-family: var(--ibm);
+    color: var(--blue);
+  }
+  .option-title-slam {
+    text-align: left;
+    font-family: var(--sfpro);
+    color: var(--light-indigo);
+    margin: 0px 0px 20px;
+  }
+  .slam-tech-list {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 17px;
+    list-style: none;
+    margin: 25px 0px 10px;
+    padding: 0px;
+    z-index: 2;
+    font-family: var(--ibm);
+    color: var(--light-indigo2);
+    font-size: 15px;
+  }
+  .logos-slam {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    color: var(--light-indigo);
+  }
+
+  .slam-logo:hover {
+    color: var(--blue);
   }
 </style>
