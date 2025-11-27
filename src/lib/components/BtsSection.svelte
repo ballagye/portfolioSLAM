@@ -9,7 +9,7 @@
 </script>
 
 <section id="bts-sio">
-  <div class="section-header"><SectionHeader /></div>
+  <div class="section-header"><SectionHeader title={"/ BTS SIO"} /></div>
   <div class="bts-desc">
     <p>
       Le Brevet de Technicien Supérieur aux Services Informatiques aux

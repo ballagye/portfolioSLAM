@@ -1,6 +1,7 @@
 <script>
   import Intro from "./lib/Intro.svelte";
   import BtsSection from "./lib/components/BtsSection.svelte";
+  import About from "./lib/components/About.svelte";
 </script>
 
 <div id="root">
@@ -11,29 +12,9 @@
     <section class="bts-sio">
       <div id="bts-sio"><BtsSection /></div>
     </section>
-    <div class="about-content">
-      <div class="about-description">
-        <p></p>
-        text blablabla
-        <ul></ul>
-      </div>
-    </div>
-    <div id="experience">
-      <!-- Je m'en occupe plus tard -->
-      <div class="section-header">
-        <span class="section-title"> / éxpérience</span>
-      </div>
-    </div>
-    <div id="bts-sio">
-      <!-- Je m'en occupe plus tard -->
-      <div class="section-header">
-        <span class="section-title"></span>
-      </div>
-    </div>
-    <div id="projets">
-      <div class="section-header"></div>
-      <!-- Je m'en occupe plus tard -->
-    </div>
+    <section>
+      <div><About /></div>
+    </section>
   </main>
 </div>
 

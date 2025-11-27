@@ -1,5 +1,9 @@
+<script lang="ts">
+  let { title } = $props();
+</script>
+
 <div id="section-header" class="sectionheaderbts">
-  <h3 class="heading">/ BTS SIO</h3>
+  <h3 class="heading">{title}</h3>
 </div>
 
 <style>
