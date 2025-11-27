@@ -130,7 +130,7 @@
 
   #bts-sio {
     margin: 0px auto;
-    max-width: 1100px;
+    max-width: 1500px;
   }
   .sisr {
     display: grid;
@@ -162,11 +162,25 @@
     font-family: var(--sfpro);
     color: var(--light-indigo2);
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .bts-desc {
+    width: 100vw;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 111px;
+  }
+  .section-header {
+    width: 100vw;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .colored {
     color: var(--blue);
@@ -239,7 +253,7 @@
     font-family: var(--sfpro);
     color: var(--light-indigo2);
     font-weight: 400;
-    font-size: 17px;
+    font-size: 20px;
   }
   .slam-overline {
     margin: 10px 0px;

@@ -1,1 +1,1 @@
-<img src="\src\assets\slam.jpg" alt="ide" width="638" class="ide" />
+<img src="\src\assets\slam.jpg" alt="ide" width="870" class="ide" />

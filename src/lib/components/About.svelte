@@ -11,7 +11,7 @@
 <style>
   .about-section {
     margin: 0px auto;
-    max-width: 1100px;
+    max-width: 1500px;
   }
   .section-header {
     display: flex;
