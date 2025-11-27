@@ -153,10 +153,10 @@
     grid-row-end: -1;
   }
   .options-list {
+    list-style: none;
     background-color: var(--dark-indigo);
     position: relative;
     padding: 15px 47px;
-
     z-index: 4;
     border-radius: 2px;
     font-family: var(--sfpro);
@@ -214,6 +214,20 @@
     color: var(--light-indigo2);
     font-size: 15px;
   }
+
+  .options-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 17px;
+    color: var(--blue);
+  }
+  .slam-options-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 17px;
+    color: var(--blue);
+  }
+
   .sisr-logo {
     color: var(--light-indigo);
   }
@@ -243,6 +257,7 @@
     position: relative;
   }
   .slam-options-list {
+    list-style: none;
     background-color: var(--dark-indigo);
     position: relative;
     padding: 15px 47px;
