@@ -296,13 +296,14 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
-    inset: 0px;
+    height: 99%;
+
     z-index: 3;
     transition: var(--transition);
     background-color: var(--dark-blue);
     mix-blend-mode: screen;
     border-radius: var(--border-radius);
+    vertical-align: middle;
   }
   .sisr-image:hover::before {
     background: transparent;
@@ -311,13 +312,14 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 99%;
     inset: 0px;
     z-index: 3;
     transition: var(--transition);
     background-color: var(--dark-blue);
     mix-blend-mode: screen;
     border-radius: var(--border-radius);
+    vertical-align: middle;
   }
   .slam-image:hover::before {
     background: transparent;
