@@ -3,7 +3,8 @@
   import MeImage from "./MeImage.svelte";
   import { slide } from "svelte/transition";
   import { onMount } from "svelte";
-  import { linear } from "svelte/easing";
+  import { linear, sineOut } from "svelte/easing";
+  import { fly } from "svelte/transition";
   let techlist: HTMLElement | null = null;
   let visible = false;
 
@@ -53,7 +54,7 @@
       <ul bind:this={techlist} class="tech-stack">
         {#each techs as tech}
           {#if visible}
-            <li transition:slide={{ duration: 500, easing: linear }}>
+            <li transition:fly={{ y: 100, duration: 700, easing: sineOut }}>
               {tech}
             </li>
           {/if}
