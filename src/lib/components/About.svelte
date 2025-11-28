@@ -1,9 +1,8 @@
 <script lang="ts">
   import SectionHeader from "./SectionHeader.svelte";
   import MeImage from "./MeImage.svelte";
-  import { slide } from "svelte/transition";
   import { onMount } from "svelte";
-  import { linear, sineOut } from "svelte/easing";
+  import { sineOut } from "svelte/easing";
   import { fly } from "svelte/transition";
   let techlist: HTMLElement | null = null;
   let visible = false;

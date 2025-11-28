@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import BgcLogo from "./components/BgcLogo.svelte";
 </script>
 
