@@ -1,6 +1,7 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
   import MeImage from "./MeImage.svelte";
+  import { slide } from "svelte/transition";
 </script>
 
 <section class="about-section">
@@ -16,15 +17,16 @@
       </p>
       <p>
         Lors de ma première année, j’ai effectué un stage chez <b>Alstom</b>,
-        dans le département Network & IT, où j’ai développé un logiciel pour
-        automatiser les configurations réseaux sur des projets ferroviaires.
+        dans le département Network & IT, où j’ai realisé un logiciel en Python
+        pour automatiser les configurations réseaux sur des projets ferroviaires
+        contribuant au CI/CD.
       </p>
       <p>
         Lors de ma deuxième année, j’ai travaillé chez <b>SAIGON</b>, où j’ai
         participé à l’amélioration du site web et migré la gestion des stocks
         d’Excel vers une solution en Java.
       </p>
-      <ul class="tech-stack">
+      <ul transition:slide={{ duration: 500 }} class="tech-stack">
         <li>JavaScript</li>
         <li>Typescript</li>
         <li>Python</li>
@@ -33,7 +35,11 @@
         <li>Wordpress</li>
       </ul>
     </div>
-    <div class="meimage"><MeImage /></div>
+
+    <div class="meimage">
+      <MeImage />
+      <div class="wrapper"></div>
+    </div>
   </div>
 </section>
 
@@ -60,7 +66,11 @@
   .meimage {
     position: relative;
     max-width: 300px;
-    padding-left: 40px;
+    padding-left: 70px;
+    top: 1em;
+    left: 1em;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
   }
   .about {
     max-width: 600px;
