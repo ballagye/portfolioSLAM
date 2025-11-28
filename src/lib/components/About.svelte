@@ -1,7 +1,31 @@
-<script>
+<script lang="ts">
   import SectionHeader from "./SectionHeader.svelte";
   import MeImage from "./MeImage.svelte";
   import { slide } from "svelte/transition";
+  import { onMount } from "svelte";
+  import { linear } from "svelte/easing";
+  let techlist: HTMLElement | null = null;
+  let visible = false;
+
+  const techs = [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Svelte",
+    "Java",
+    "WordPress",
+  ];
+  onMount(() => {
+    if (!techlist) return;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        visible = true;
+      }
+    });
+    observer.observe(techlist);
+    return () => observer.disconnect();
+  });
 </script>
 
 <section class="about-section">
@@ -26,13 +50,14 @@
         participé à l’amélioration du site web et migré la gestion des stocks
         d’Excel vers une solution en Java.
       </p>
-      <ul transition:slide={{ duration: 500 }} class="tech-stack">
-        <li>JavaScript</li>
-        <li>Typescript</li>
-        <li>Python</li>
-        <li>Svelte</li>
-        <li>Java</li>
-        <li>Wordpress</li>
+      <ul bind:this={techlist} class="tech-stack">
+        {#each techs as tech}
+          {#if visible}
+            <li transition:slide={{ duration: 500, easing: linear }}>
+              {tech}
+            </li>
+          {/if}
+        {/each}
       </ul>
     </div>
 
