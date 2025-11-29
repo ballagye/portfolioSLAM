@@ -2,6 +2,7 @@
   import Intro from "./lib/Intro.svelte";
   import BtsSection from "./lib/components/BtsSection.svelte";
   import About from "./lib/components/About.svelte";
+  import Experience from "./lib/components/Experience.svelte";
 </script>
 
 <div id="root">
@@ -14,6 +15,9 @@
     </section>
     <section>
       <div><About /></div>
+    </section>
+    <section>
+      <Experience />
     </section>
   </main>
 </div>
