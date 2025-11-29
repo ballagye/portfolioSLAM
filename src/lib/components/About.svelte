@@ -50,6 +50,7 @@
         participé à l’amélioration du site web et migré la gestion des stocks
         d’Excel vers une solution en Java.
       </p>
+      <p>Voici avec quoi j'ai travaillé:</p>
       <ul bind:this={techlist} class="tech-stack">
         {#each techs as tech}
           {#if visible}
