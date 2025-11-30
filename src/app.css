@@ -15,6 +15,7 @@
   --indigo-500: oklch(58.5% 0.233 277.117);
   --dark-blue: oklch(25.7% 0.09 281.288);
   --border-radius: 4px;
+  --fz-xs: 13px;
 }
 body {
   background-color: oklch(25.7% 0.09 281.288);
