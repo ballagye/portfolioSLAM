@@ -16,9 +16,7 @@
     <section>
       <div><About /></div>
     </section>
-    <section>
-      <Experience />
-    </section>
+    <section><Experience /></section>
   </main>
 </div>
 

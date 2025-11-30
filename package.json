@@ -22,6 +22,7 @@
   "dependencies": {
     "@jis3r/icons": "^1.11.0",
     "@lucide/svelte": "^0.555.0",
+    "bits-ui": "^2.14.4",
     "p5": "^2.1.1"
   }
 }
