@@ -8,14 +8,20 @@
     <SectionHeader title={"/ Expérience"} />
   </div>
   <div class="tabs">
-    <Tabs.Root value="alstom">
-      <Tabs.List class="tabs-list">
+    <Tabs.Root
+      value="alstom"
+      data-tabs-root
+      style="display: flex;
+      align-items: center;
+      gap: 50px;"
+    >
+      <Tabs.List style="display: grid;">
         <Tabs.Trigger value="alstom">Alstom</Tabs.Trigger>
         <Tabs.Trigger value="saigon">Saigon</Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="alstom">
         <div class="alstom-content">
-          <h3>
+          <h3 class="">
             <span>Stage</span>
             <span>
               @<a href="https://www.alstom.com/fr" target="_blank">
@@ -55,5 +61,7 @@
   .experience-section {
     margin: 0px auto;
     max-width: 1100px;
+  }
+  h3 {
   }
 </style>
