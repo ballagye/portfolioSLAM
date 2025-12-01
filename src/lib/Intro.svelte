@@ -30,7 +30,7 @@
     padding: 0;
     justify-content: center;
     align-items: center;
-    padding: 15em 0em 12em;
+    padding: 10em 0em 0em;
   }
 
   div {

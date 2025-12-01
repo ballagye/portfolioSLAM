@@ -3,7 +3,6 @@
   import BtsSection from "./lib/components/BtsSection.svelte";
   import About from "./lib/components/About.svelte";
   import Experience from "./lib/components/Experience.svelte";
-  import Experiencecopy from "./lib/components/Experience copy.svelte";
 </script>
 
 <div id="root">
@@ -18,8 +17,12 @@
       <div><About /></div>
     </section>
     <section><Experience /></section>
-    <section><Experiencecopy /></section>
   </main>
 </div>
 
-<!-- c'est root! -->
+<style>
+  section {
+    padding: 100px 0px;
+    margin: 0px auto;
+  }
+</style>
