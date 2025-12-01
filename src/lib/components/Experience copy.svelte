@@ -19,31 +19,14 @@
         style="display: grid; 
       gap: 10px"
       >
-        <Tabs.Trigger
-          value="alstom"
-          style="background-color: transparent; background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    font-size: 17px;
-    font-family: var(--ibm);
-    color: var(--blue);
-    ">Alstom</Tabs.Trigger
+        <Tabs.Trigger value="alstom">
+          {#snippet child({ props })}
+            <button {...props} class="scoped-button">Toggle Item</button>
+          {/snippet}
+
+          Alstom</Tabs.Trigger
         >
-        <Tabs.Trigger
-          value="saigon"
-          style="background-color: transparent; background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    font-size: 17px;
-    font-family: var(--ibm);
-    color: var(--blue)">Saigon</Tabs.Trigger
-        >
+        <Tabs.Trigger value="saigon">Saigon</Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="alstom">
         <div class="alstom-content">
@@ -115,5 +98,9 @@
     font-size: 14px;
     margin-bottom: 25px;
     margin: 0px;
+  }
+  .scoped-button {
+    background-color: #3182ce;
+    color: #fff;
   }
 </style>
