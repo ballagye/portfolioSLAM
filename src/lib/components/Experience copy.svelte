@@ -1,6 +1,7 @@
 <script lang="ts">
   import SectionHeader from "./SectionHeader.svelte";
   import { Tabs } from "bits-ui";
+  import { fade } from "svelte/transition";
 </script>
 
 <section class="experience-section">
@@ -32,7 +33,7 @@
         >
       </Tabs.List>
       <Tabs.Content value="alstom">
-        <div class="alstom-content">
+        <div class="alstom-content tab-content">
           <h3>
             <span>Stage DevOps (Python, Ansible)</span>
             <span class="at"> @ </span>
@@ -50,7 +51,7 @@
         </div>
       </Tabs.Content>
       <Tabs.Content value="saigon">
-        <div class="saigon-content">
+        <div class="saigon-content tab-content">
           <h3>
             <span>Stage</span>
             <span class="at"> @ </span>
@@ -123,5 +124,20 @@
 
   [data-tabs-trigger][data-state="active"] {
     color: var(--blue);
+  }
+
+  [data-tabs-content][data-state="active"].alstom-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .tab-content {
+    animation: fade-up 0.5s ease-out;
+  }
+
+  @keyframes fade-up {
+    0% {
+      opacity: 0.2;
+      transform: translateY(15px) scale(1);
+    }
   }
 </style>
