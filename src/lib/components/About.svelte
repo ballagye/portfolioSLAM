@@ -84,7 +84,7 @@
   p {
     font-family: var(--sfpro);
     color: var(--light-indigo2);
-    font-size: 17px;
+    font-size: 18px;
   }
   .inner {
     display: flex;

@@ -21,12 +21,18 @@
       >
         <Tabs.Trigger value="alstom">
           {#snippet child({ props })}
-            <button {...props} class="scoped-button">Toggle Item</button>
+            <button {...props} class="scoped-button"> Alstom</button>
           {/snippet}
 
           Alstom</Tabs.Trigger
         >
-        <Tabs.Trigger value="saigon">Saigon</Tabs.Trigger>
+        <Tabs.Trigger value="saigon">
+          {#snippet child({ props })}
+            <button {...props} class="scoped-button"> SAIGON</button>
+          {/snippet}
+
+          Saigon</Tabs.Trigger
+        >
       </Tabs.List>
       <Tabs.Content value="alstom">
         <div class="alstom-content">
@@ -100,7 +106,18 @@
     margin: 0px;
   }
   .scoped-button {
-    background-color: #3182ce;
-    color: #fff;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 17px;
+    font-family: var(--ibm);
+    color: var(--light-indigo2);
+    padding: 0px 20px 2px;
+  }
+  [data-tabs-trigger][data-state="active"] {
+    color: var(--blue);
   }
 </style>

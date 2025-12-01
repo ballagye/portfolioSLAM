@@ -16,6 +16,7 @@
   --dark-blue: oklch(25.7% 0.09 281.288);
   --border-radius: 4px;
   --fz-xs: 13px;
+  --lightest-navy: #233554;
 }
 body {
   background-color: oklch(25.7% 0.09 281.288);
