@@ -112,10 +112,12 @@
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    font-size: 17px;
+    font-size: var(--fz-xs);
     font-family: var(--ibm);
     color: var(--light-indigo2);
     padding: 0px 20px 2px;
+    border-right: 2px solid;
+    height: var(--tab-height);
   }
   [data-tabs-trigger][data-state="active"] {
     color: var(--blue);

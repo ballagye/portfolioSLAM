@@ -17,6 +17,7 @@
   --border-radius: 4px;
   --fz-xs: 13px;
   --lightest-navy: #233554;
+  --tab-height: 42px;
 }
 body {
   background-color: oklch(25.7% 0.09 281.288);
