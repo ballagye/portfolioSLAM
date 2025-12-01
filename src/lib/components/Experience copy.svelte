@@ -15,10 +15,7 @@
       align-items: center;
       gap: 50px;"
     >
-      <Tabs.List
-        style="display: grid; 
-      gap: 10px"
-      >
+      <Tabs.List style="display: grid;">
         <Tabs.Trigger value="alstom">
           {#snippet child({ props })}
             <button {...props} class="scoped-button"> Alstom</button>
@@ -118,7 +115,12 @@
     padding: 0px 20px 2px;
     border-right: 2px solid;
     height: var(--tab-height);
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    transition-property: all;
   }
+
   [data-tabs-trigger][data-state="active"] {
     color: var(--blue);
   }
