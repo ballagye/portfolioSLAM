@@ -4,20 +4,19 @@
 
 <section>
   <div id="intro">
-    <div class="Typist">
-      <div id="intro-text">
-        <p>Bonjour, je m'appelle</p>
-        <h1 class="big-heading">Balla Gueye.</h1>
-        <h2 class="big-heading">Étudiant en BTS SIO à l'EFREI.</h2>
-        <p class="intro-subtitle">
-          Je développe des logiciels et automatise le déploiement de
-          configurations ou des services, anciennement stagiaire chez Alstom et
-          SAIGON.
-        </p>
-      </div>
+    <div id="intro-text">
+      <p>Bonjour, je m'appelle</p>
+      <h1 class="big-heading">Balla Gueye.</h1>
+      <h2 class="big-heading">Étudiant en BTS SIO à l'EFREI.</h2>
+      <p class="intro-subtitle">
+        Je développe des logiciels et automatise le déploiement de
+        configurations ou des services, anciennement stagiaire chez Alstom et
+        SAIGON.
+      </p>
+      <a href="mailto:ballagyepro@gmail.com" class="intro-contact"> Contact</a>
     </div>
+
     <div id="bgc-logo"><BgcLogo /></div>
-    <span class=" Cursor blinking-cursor"></span>
   </div>
 </section>
 
@@ -35,11 +34,6 @@
 
   div {
     display: block;
-  }
-  .Typist {
-    font-weight: bold;
-    font-family: "SF Pro Display", sans-serif;
-    color: oklch(87% 0.065 274.039);
   }
   p {
     color: #6ecfff;
@@ -73,5 +67,24 @@
     font-weight: 400;
     margin: 20px 0px 0px;
     max-width: 390px;
+  }
+  .intro-contact {
+    display: inline-block;
+    color: var(--blue);
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    border-radius: var(--border-radius);
+    padding: 1rem 3rem;
+    font-family: var(--ibm);
+    text-decoration: none;
+    transition: var(--transition);
+    margin-top: 50px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .intro-contact:hover {
+    outline: none;
+    box-shadow: 4px 4px 0 0 var(--blue);
+    transform: translate(-5px, -5px);
   }
 </style>
