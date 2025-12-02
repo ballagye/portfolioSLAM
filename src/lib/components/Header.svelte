@@ -12,8 +12,8 @@
   <nav>
     <h1>Balla Gueye</h1>
     <ul>
-      {#each header as headers}
-        <li>{headers}</li>
+      {#each header as headercontent}
+        <li>{headercontent}</li>
       {/each}
       <a class="cv-button" href="./cv.pdf" target="_blank">CV</a>
     </ul>
@@ -33,8 +33,8 @@
     padding: 0px 10px 0px 50px;
     width: 100%;
     height: var(--nav-height);
-    background-color: var(--indigo);
-    backdrop-filter: blur(140px);
+    background-color: rgba(30, 26, 77, 0.85);
+    backdrop-filter: blur(10px);
     transition: var(--transition);
     filter: none !important;
     pointer-events: auto !important;
@@ -44,7 +44,6 @@
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    backdrop-filter: blur(1000px);
     -webkit-box-align: center;
     align-items: center;
     position: relative;

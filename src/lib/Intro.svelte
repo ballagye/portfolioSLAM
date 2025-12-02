@@ -29,7 +29,7 @@
     padding: 0;
     justify-content: center;
     align-items: center;
-    padding: 10em 0em 0em;
+    padding: 3em 0em 0em;
   }
 
   div {
