@@ -3,9 +3,11 @@
   import BtsSection from "./lib/components/BtsSection.svelte";
   import About from "./lib/components/About.svelte";
   import Experience from "./lib/components/Experience.svelte";
+  import Header from "./lib/components/Header.svelte";
 </script>
 
 <div id="root">
+  <header><Header /></header>
   <main class="App">
     <section class="intro">
       <div id="intro"><Intro /></div>

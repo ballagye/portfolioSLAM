@@ -1,7 +1,6 @@
 <script lang="ts">
   import SectionHeader from "./SectionHeader.svelte";
   import { Tabs } from "bits-ui";
-  import { fade } from "svelte/transition";
 </script>
 
 <section class="experience-section">
