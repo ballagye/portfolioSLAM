@@ -6,7 +6,24 @@
   import { SquareTerminal } from "@jis3r/icons";
   import { ChevronsLeftRight } from "@jis3r/icons";
   import { ChartNoAxesGantt } from "@jis3r/icons";
+  import { fly } from "svelte/transition";
+  import { sineOut } from "svelte/easing";
+  import { onMount } from "svelte";
 
+  let techlist: HTMLElement | null = null;
+  let visible = false;
+
+  onMount(() => {
+    if (!techlist) return;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        visible = true;
+      }
+    });
+    observer.observe(techlist);
+    return () => observer.disconnect();
+  });
   const sisrTechList = [
     "Machine Virtuelles",
     "Linux",
@@ -79,7 +96,9 @@
         </ul>
         <ul class="sisr-tech-list">
           {#each sisrTechList as sisrList}
-            <li>{sisrList}</li>
+            <li>
+              {sisrList}
+            </li>
           {/each}
         </ul>
         <div class="logos">
@@ -116,9 +135,13 @@
             >
           </li>
         </ul>
-        <ul class="slam-tech-list">
+        <ul bind:this={techlist} class="slam-tech-list">
           {#each slamTechList as slamList}
-            <li>{slamList}</li>
+            {#if visible}
+              <li transition:fly={{ x: 100, duration: 500, easing: sineOut }}>
+                {slamList}
+              </li>
+            {/if}
           {/each}
         </ul>
         <div class="logos-slam">
