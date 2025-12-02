@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import SectionHeader from "./SectionHeader.svelte";
   import Images from "./Images.svelte";
   import SlamImage from "./SlamImage.svelte";
@@ -6,6 +6,24 @@
   import { SquareTerminal } from "@jis3r/icons";
   import { ChevronsLeftRight } from "@jis3r/icons";
   import { ChartNoAxesGantt } from "@jis3r/icons";
+
+  const sisrTechList = [
+    "Machine Virtuelles",
+    "Linux",
+    "Debian",
+    "Ubuntu",
+    "Windows Server",
+  ];
+
+  const slamTechList = [
+    "VS Code",
+    "Java",
+    "Python",
+    "Web",
+    "SQL",
+    "PHP",
+    "JavaScript",
+  ];
 </script>
 
 <section id="bts-sio">
@@ -60,11 +78,9 @@
           </li>
         </ul>
         <ul class="sisr-tech-list">
-          <li>Machine Virtuelles</li>
-          <li>Linux</li>
-          <li>Debian</li>
-          <li>Ubuntu</li>
-          <li>Windows Server</li>
+          {#each sisrTechList as sisrList}
+            <li>{sisrList}</li>
+          {/each}
         </ul>
         <div class="logos">
           <div class="sisr-logo"><ServerCog /></div>
@@ -101,13 +117,9 @@
           </li>
         </ul>
         <ul class="slam-tech-list">
-          <li>VS Code</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Web</li>
-          <li>SQL</li>
-          <li>PHP</li>
-          <li>JavaScript</li>
+          {#each slamTechList as slamList}
+            <li>{slamList}</li>
+          {/each}
         </ul>
         <div class="logos-slam">
           <div class="slam-logo"><ChevronsLeftRight /></div>
