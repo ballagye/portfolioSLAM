@@ -9,16 +9,16 @@
 <div id="root">
   <header><Header /></header>
   <main class="App">
-    <section class="intro">
-      <div id="intro"><Intro /></div>
+    <section id="intro">
+      <div><Intro /></div>
     </section>
-    <section class="bts-sio">
-      <div id="bts-sio"><BtsSection /></div>
+    <section id="bts-sio">
+      <div><BtsSection /></div>
     </section>
-    <section>
+    <section id="about">
       <div><About /></div>
     </section>
-    <section><Experience /></section>
+    <section id="experience"><Experience /></section>
   </main>
 </div>
 

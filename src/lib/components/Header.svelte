@@ -1,20 +1,16 @@
 <script lang="ts">
-  const header = [
-    "BTS",
-    "A propos",
-    "Expérience",
-    "Epreuves",
-    "Veille Technologique",
-  ];
 </script>
 
 <header>
   <nav>
     <h1>Balla Gueye</h1>
     <ul>
-      {#each header as headercontent}
-        <li>{headercontent}</li>
-      {/each}
+      <li><a href="./#bts-sio">BTS</a></li>
+      <li><a href="./#about">A propos</a></li>
+      <li><a href="./#experience">Expérience</a></li>
+      <li>Epreuves</li>
+      <li>Veille Technologique</li>
+
       <a class="cv-button" href="./cv.pdf" target="_blank">CV</a>
     </ul>
   </nav>
@@ -81,5 +77,15 @@
     outline: none;
     box-shadow: 3px 3px 0 0 var(--blue);
     transform: translate(-4px, -4px);
+  }
+  a {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+  }
+  a:hover {
+    color: var(--blue);
   }
 </style>
