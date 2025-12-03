@@ -20,6 +20,7 @@
     </section>
     <section id="experience"><Experience /></section>
   </main>
+  <footer></footer>
 </div>
 
 <style>

@@ -61,7 +61,7 @@
                 <Command.GroupItems>
                   <Command.Item
                     class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
-                    keywords={["getting started", "tutorial"]}
+                    keywords={["accueil", "bts sio", " a propos", "experience"]}
                   >
                     <House class="size-4" />
                     Accueil
