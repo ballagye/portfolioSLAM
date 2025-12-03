@@ -1,4 +1,5 @@
 <script>
+  import "./app.css";
   import Intro from "./lib/Intro.svelte";
   import BtsSection from "./lib/components/BtsSection.svelte";
   import About from "./lib/components/About.svelte";
