@@ -11,7 +11,7 @@
       <li>Epreuves</li>
       <li>Veille Technologique</li>
 
-      <a class="cv-button" href="./cv.pdf" target="_blank">CV</a>
+      <a href="src\assets\cv.pdf" class="cv-button" target="_blank">CV</a>
     </ul>
   </nav>
 </header>
