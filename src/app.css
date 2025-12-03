@@ -15,6 +15,13 @@
   --indigo-500: oklch(58.5% 0.233 277.117);
   --dark-blue: oklch(25.7% 0.09 281.288);
   --border-radius: 4px;
+  --fz-xs: 13px;
+  --lightest-navy: #233554;
+  --tab-height: 42px;
+  --nav-height: 100px;
+  --spacing-input: 3rem;
+  --radius-input: 9px;
+  --shadow-mini: 0px 1px 0px 1px rgba(0, 0, 0, 0.04);
 }
 body {
   background-color: oklch(25.7% 0.09 281.288);
