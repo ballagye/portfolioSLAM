@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Command from "./Command.svelte";
 </script>
 
 <header>
@@ -12,6 +13,8 @@
       <li>Veille Technologique</li>
 
       <a href="src\assets\cv.pdf" class="cv-button" target="_blank">CV</a>
+
+      <li><Command /></li>
     </ul>
   </nav>
 </header>

@@ -21,7 +21,6 @@
     </section>
     <section id="experience"><Experience /></section>
   </main>
-  <footer><Command /></footer>
 </div>
 
 <style>
