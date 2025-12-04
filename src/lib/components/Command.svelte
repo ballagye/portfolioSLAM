@@ -31,11 +31,6 @@
       <Dialog.Content
         class="rounded-card-lg bg-background shadow-popover data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95  data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] outline-hidden fixed left-[50%] top-[50%] z-50 w-full max-w-[94%] translate-x-[-50%] translate-y-[-50%] sm:max-w-[490px] md:w-full"
       >
-        <Dialog.Title class="sr-only">Command Menu</Dialog.Title>
-        <Dialog.Description class="sr-only">
-          This is the command menu. Use the arrow keys to navigate and press
-          ctrl + k to open the search bar.
-        </Dialog.Description>
         <Command.Root
           class="divide-border border-muted bg-background flex h-full w-full flex-col divide-y self-start overflow-hidden rounded-xl border"
         >
@@ -325,27 +320,24 @@
 
     /* Style */
     background: var(--indigo); /* bg-background */
-    border: 1px solid var(--border-muted); /* border + border-muted */
+    border: 1px solid var(--light-indigo2); /* border + border-muted */
     border-radius: 0.75rem; /* rounded-xl */
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--light-indigo2);
   }
   :global([data-command-input]) {
-    height: var(
-      --h-input,
-      2.5rem
-    ); /* h-input — mets la valeur exacte si tu veux */
-    background: var(--indigo); /* bg-background */
-    overflow: hidden; /* truncate */
+    height: var(--h-input);
+    background: var(--indigo);
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-
+    font-family: var(--sfpro);
+    color: var(--light-indigo2);
     display: inline-flex; /* inline-flex */
     align-items: center;
     border-radius: 0.75rem; /* rounded-xl */
     padding-left: 1rem; /* px-4 */
     padding-right: 1rem;
     font-size: 0.875rem; /* text-sm */
-    color: inherit;
     transition:
       color 150ms,
       background-color 150ms,
@@ -362,56 +354,56 @@
     box-shadow: none;
   }
   :global([data-command-list]) {
-    max-height: 280px; /* max-h-[280px] */
-    overflow-y: auto; /* overflow-y-auto */
-    overflow-x: hidden; /* overflow-x-hidden */
-    padding-left: 0.5rem; /* px-2 */
-    padding-right: 0.5rem; /* px-2 */
-    padding-bottom: 0.5rem; /* pb-2 */
+    max-height: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   :global([data-command-empty]) {
-    color: var(--blue); /* text-muted-foreground */
+    color: var(--blue);
 
-    display: flex; /* flex */
-    width: 100%; /* w-full */
-    align-items: center; /* items-center */
-    justify-content: center; /* justify-center */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 
-    padding-top: 2rem; /* pt-8  (8 × 0.25rem) */
-    padding-bottom: 1.5rem; /* pb-6  (6 × 0.25rem) */
-
-    font-size: 0.875rem; /* text-sm */
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.875rem;
   }
   :global([data-command-group-heading]) {
-    color: var(--muted-foreground); /* text-muted-foreground */
+    font-family: var(--sfpro);
+    color: var(--light-indigo2);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 
-    padding-left: 0.75rem; /* px-3 */
-    padding-right: 0.75rem; /* px-3 */
-    padding-top: 1rem; /* pt-4 */
-    padding-bottom: 0.5rem; /* pb-2 */
-
-    font-size: 0.75rem; /* text-xs */
+    font-size: 0.75rem;
   }
   :global([data-command-item]) {
-    border-radius: 0.5rem; /* rounded-button */
-    display: flex; /* flex */
-    align-items: center; /* items-center */
-    gap: 0.5rem; /* gap-2 */
+    font-family: var(--sfpro);
+    color: var(--light-indigo2);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
 
-    height: 2.5rem; /* h-10 */
-    padding-left: 0.75rem; /* px-3 */
-    padding-right: 0.75rem; /* px-3 */
-    padding-top: 0.625rem; /* py-2.5 */
-    padding-bottom: 0.625rem; /* py-2.5 */
+    font-size: 0.875rem;
+    text-transform: capitalize;
 
-    font-size: 0.875rem; /* text-sm */
-    text-transform: capitalize; /* capitalize */
-
-    cursor: pointer; /* cursor-pointer */
-    user-select: none; /* select-none */
+    cursor: pointer;
+    user-select: none;
     outline: none;
   }
-  :global([data-command-item][data-selected="true"]) {
+  :global([data-command-item][data-selected=""]) {
     background: var(--dark-indigo);
   }
 </style>
