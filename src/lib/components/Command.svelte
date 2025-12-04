@@ -318,10 +318,12 @@
     align-self: flex-start; /* self-start */
     overflow: hidden; /* overflow-hidden */
 
-    /* Style */
     background: var(--indigo); /* bg-background */
     border: 1px solid var(--light-indigo2); /* border + border-muted */
     border-radius: 0.75rem; /* rounded-xl */
+  }
+
+  :global([data-command-root] > * + *) {
     border-top: 1px solid var(--light-indigo2);
   }
   :global([data-command-input]) {
@@ -330,6 +332,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
     font-family: var(--sfpro);
     color: var(--light-indigo2);
     display: inline-flex; /* inline-flex */
@@ -393,14 +396,14 @@
     height: 2.5rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+    padding-top: 0.625rem; /* py-2.5 */
+    padding-bottom: 0.625rem; /* py-2.5 */
 
-    font-size: 0.875rem;
-    text-transform: capitalize;
+    font-size: 0.875rem; /* text-sm */
+    text-transform: capitalize; /* capitalize */
 
-    cursor: pointer;
-    user-select: none;
+    cursor: pointer; /* cursor-pointer */
+    user-select: none; /* select-none */
     outline: none;
   }
   :global([data-command-item][data-selected=""]) {
