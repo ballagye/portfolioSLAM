@@ -36,7 +36,7 @@
       >
         <Command.Input
           class="focus-override h-input bg-background placeholder:text-foreground-alt/50 focus:outline-hidden inline-flex truncate rounded-xl px-4 text-sm transition-colors focus:ring-0"
-          placeholder="Search for something..."
+          placeholder="Rechercher..."
         />
         <Command.List
           class="max-h-[280px] overflow-y-auto overflow-x-hidden px-2 pb-2"
@@ -56,14 +56,14 @@
               <Command.GroupItems>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
-                  keywords={["accueil", "bts sio", " a propos", "experience"]}
+                  keywords={["accueil"]}
                 >
                   <House class="size-4" />
                   Accueil
                 </Command.Item>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
-                  keywords={["child", "custom element", "snippets"]}
+                  keywords={["bts", "bts sio", "sio"]}
                 >
                   <GraduationCap class="size-4 " />
                   BTS SIO
@@ -87,14 +87,14 @@
               <Command.GroupItems>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
-                  keywords={["dates", "times"]}
+                  keywords={["bts", "bts sio", "sio", "epreuves", "e5", "E5"]}
                 >
                   <FolderCode class="size-4" />
                   Epreuve E5
                 </Command.Item>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
-                  keywords={["buttons", "forms"]}
+                  keywords={["bts", "bts sio", "sio", "epreuves", "e6", "E6"]}
                 >
                   <FolderCode class="size-4" />
                   Epreuve E6
@@ -111,14 +111,14 @@
               <Command.GroupItems>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
-                  keywords={["dates", "times"]}
+                  keywords={["liens", "github", "git", "contact"]}
                 >
                   <Github class="size-4" />
                   Github
                 </Command.Item>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
-                  keywords={["dates", "times"]}
+                  keywords={["liens", "linked", "linkedin"]}
                 >
                   <Linkedin class="size-4" />
                   LinkedIn
