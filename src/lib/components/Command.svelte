@@ -142,7 +142,7 @@
   :global([data-dialog-trigger]) {
     border-radius: 0.5rem;
     background-color: #0f0f0f;
-    color: var(--blue);
+    color: var(--light-indigo);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 
     display: inline-flex;
@@ -177,7 +177,12 @@
     position: fixed;
     inset: 0;
     z-index: 50;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* background color when triggered do not touch */
   }
 
   @keyframes fadeIn {
@@ -200,7 +205,7 @@
 
   :global([data-dialog-content]) {
     border-radius: 1rem;
-    background: var(--background);
+    background: var(--indigo);
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
     outline: none;
 
@@ -235,7 +240,7 @@
       slideInLeft 0.25s ease-out forwards,
       slideInTop 0.25s ease-out forwards;
   }
-  :global([data-dialog-content][data-state="open"]) {
+  :global([data-dialog-content][data-state="closed"]) {
     animation:
       fadeOut 0.2s ease-in forwards,
       zoomOut 0.2s ease-in forwards,
@@ -329,7 +334,7 @@
       --h-input,
       2.5rem
     ); /* h-input — mets la valeur exacte si tu veux */
-    background: var(--background); /* bg-background */
+    background: var(--indigo); /* bg-background */
     overflow: hidden; /* truncate */
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -350,7 +355,7 @@
     border: none;
   }
   :global([data-command-input]::placeholder) {
-    color: rgba(var(--foreground-alt-rgb), 0.5);
+    color: rgba(var(--light-indigo2), 0.5);
   }
   :global([data-command-input]:focus) {
     outline: none;
