@@ -73,7 +73,7 @@
                   keywords={["css", "theme", "colors", "fonts", "tailwind"]}
                 >
                   <PenLine class="size-4" />
-                  A propos & Experience
+                  <a href="./#about">A propos & Experience</a>
                 </Command.Item>
               </Command.GroupItems>
             </Command.Group>
@@ -436,5 +436,10 @@
   .folder-code {
     width: 1px;
     height: 1px;
+  }
+  a {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
   }
 </style>
