@@ -441,9 +441,4 @@
     width: 1px;
     height: 1px;
   }
-  a {
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    color: inherit;
-  }
 </style>
