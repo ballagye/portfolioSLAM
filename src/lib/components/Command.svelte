@@ -59,14 +59,16 @@
                   keywords={["accueil"]}
                 >
                   <House class="size-4" />
-                  Accueil
+                  <a href="./#intro">Accueil</a>
                 </Command.Item>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["bts", "bts sio", "sio"]}
                 >
-                  <GraduationCap class="size-4 " />
-                  BTS SIO
+                  <a href="./#bts-sio">
+                    <GraduationCap class="size-4 " />
+                    BTS SIO</a
+                  >
                 </Command.Item>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
@@ -114,14 +116,19 @@
                   keywords={["liens", "github", "git", "contact"]}
                 >
                   <Github class="size-4" />
-                  Github
+                  <a href="https://github.com/ballagye" target="_blank">
+                    Github</a
+                  >
                 </Command.Item>
                 <Command.Item
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["liens", "linked", "linkedin"]}
                 >
                   <Linkedin class="size-4" />
-                  LinkedIn
+                  <a
+                    href="https://www.linkedin.com/in/balla-gueye-3b8b6b334/"
+                    target="_blank">LinkedIn</a
+                  >
                 </Command.Item>
               </Command.GroupItems>
             </Command.Group>
