@@ -54,29 +54,30 @@
                 Navigation
               </Command.GroupHeading>
               <Command.GroupItems>
-                <Command.Item
+                <Command.LinkItem
+                  href="./#intro"
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["accueil"]}
                 >
                   <House class="size-4" />
-                  <a href="./#intro">Accueil</a>
-                </Command.Item>
-                <Command.Item
+                  Accueil
+                </Command.LinkItem>
+                <Command.LinkItem
+                  href="./#bts-sio"
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["bts", "bts sio", "sio"]}
                 >
-                  <a href="./#bts-sio">
-                    <GraduationCap class="size-4 " />
-                    BTS SIO</a
-                  >
-                </Command.Item>
-                <Command.Item
+                  <GraduationCap class="size-4 " />
+                  BTS SIO
+                </Command.LinkItem>
+                <Command.LinkItem
+                  href="./#about"
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["css", "theme", "colors", "fonts", "tailwind"]}
                 >
                   <PenLine class="size-4" />
-                  <a href="./#about">A propos & Experience</a>
-                </Command.Item>
+                  A propos & Experience
+                </Command.LinkItem>
               </Command.GroupItems>
             </Command.Group>
             <Command.Separator />
@@ -87,20 +88,20 @@
                 Epreuves
               </Command.GroupHeading>
               <Command.GroupItems>
-                <Command.Item
+                <Command.LinkItem
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["bts", "bts sio", "sio", "epreuves", "e5", "E5"]}
                 >
                   <FolderCode class="size-4" />
                   Epreuve E5
-                </Command.Item>
-                <Command.Item
+                </Command.LinkItem>
+                <Command.LinkItem
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["bts", "bts sio", "sio", "epreuves", "e6", "E6"]}
                 >
                   <FolderCode class="size-4" />
                   Epreuve E6
-                </Command.Item>
+                </Command.LinkItem>
               </Command.GroupItems>
             </Command.Group>
             <Command.Separator />
@@ -111,25 +112,25 @@
                 Liens
               </Command.GroupHeading>
               <Command.GroupItems>
-                <Command.Item
+                <Command.LinkItem
+                  href="https://github.com/ballagye"
+                  target="_blank"
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["liens", "github", "git", "contact"]}
                 >
                   <Github class="size-4" />
-                  <a href="https://github.com/ballagye" target="_blank">
-                    Github</a
-                  >
-                </Command.Item>
-                <Command.Item
+                  Github
+                </Command.LinkItem>
+                <Command.LinkItem
+                  value="linkedin"
+                  href="https://www.linkedin.com/in/balla-gueye-3b8b6b334/"
+                  target="_blank"
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["liens", "linked", "linkedin"]}
                 >
                   <Linkedin class="size-4" />
-                  <a
-                    href="https://www.linkedin.com/in/balla-gueye-3b8b6b334/"
-                    target="_blank">LinkedIn</a
-                  >
-                </Command.Item>
+                  Linkedin
+                </Command.LinkItem>
               </Command.GroupItems>
             </Command.Group>
           </Command.Viewport>
@@ -177,12 +178,7 @@
     position: fixed;
     inset: 0;
     z-index: 50;
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.8
-    ); /* background color when triggered do not touch */
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   @keyframes fadeIn {
@@ -316,16 +312,16 @@
     }
   }
   :global([data-command-root]) {
-    display: flex; /* flex */
-    flex-direction: column; /* flex-col */
-    height: 100%; /* h-full */
-    width: 100%; /* w-full */
-    align-self: flex-start; /* self-start */
-    overflow: hidden; /* overflow-hidden */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-self: flex-start;
+    overflow: hidden;
 
-    background: var(--indigo); /* bg-background */
-    border: 1px solid var(--light-indigo2); /* border + border-muted */
-    border-radius: 0.75rem; /* rounded-xl */
+    background: var(--indigo);
+    border: 1px solid var(--light-indigo2);
+    border-radius: 0.75rem;
   }
 
   :global([data-command-root] > * + *) {
@@ -340,18 +336,18 @@
 
     font-family: var(--sfpro);
     color: var(--light-indigo2);
-    display: inline-flex; /* inline-flex */
+    display: inline-flex;
     align-items: center;
-    border-radius: 0.75rem; /* rounded-xl */
-    padding-left: 1rem; /* px-4 */
+    border-radius: 0.75rem;
+    padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 0.875rem; /* text-sm */
+    font-size: 0.875rem;
     transition:
       color 150ms,
       background-color 150ms,
       border-color 150ms;
 
-    outline: none; /* focus:outline-hidden */
+    outline: none;
     border: none;
   }
   :global([data-command-input]::placeholder) {
@@ -401,14 +397,15 @@
     height: 2.5rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-    padding-top: 0.625rem; /* py-2.5 */
-    padding-bottom: 0.625rem; /* py-2.5 */
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    text-decoration: none;
 
-    font-size: 0.875rem; /* text-sm */
-    text-transform: capitalize; /* capitalize */
+    font-size: 0.875rem;
+    text-transform: capitalize;
 
-    cursor: pointer; /* cursor-pointer */
-    user-select: none; /* select-none */
+    cursor: pointer;
+    user-select: none;
     outline: none;
   }
   :global([data-command-item][data-selected=""]) {
