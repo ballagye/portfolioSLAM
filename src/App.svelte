@@ -4,7 +4,7 @@
   import About from "./lib/components/About.svelte";
   import Experience from "./lib/components/Experience.svelte";
   import Header from "./lib/components/Header.svelte";
-  import Command from "./lib/components/Command.svelte";
+  import Footer from "./lib/components/Footer.svelte";
 </script>
 
 <div id="root">
@@ -21,6 +21,7 @@
     </section>
     <section id="experience"><Experience /></section>
   </main>
+  <footer><Footer /></footer>
 </div>
 
 <style>
