@@ -1,10 +1,30 @@
 <script lang="ts">
   import BgcLogo from "./components/BgcLogo.svelte";
+  import { blur } from "svelte/transition";
+  import { onMount } from "svelte";
+  import { linear } from "svelte/easing";
+
+  let name: HTMLElement | null = null;
+  let visible = false;
+
+  onMount(() => {
+    if (!name) return;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        visible = true;
+      }
+    });
+    observer.observe(name);
+    return () => observer.disconnect();
+  });
+
+  let options = { duration: 700, easing: linear };
 </script>
 
 <section>
   <div id="intro">
-    <div id="intro-text">
+    <div id="intro-text" transition:blur={options} bind:this={name}>
       <p>Bonjour, je m'appelle</p>
       <h1 class="big-heading">Balla Gueye.</h1>
       <h2 class="big-heading">Étudiant en BTS SIO à l'EFREI.</h2>
