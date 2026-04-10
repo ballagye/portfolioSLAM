@@ -1,5 +1,6 @@
 <script>
   import SectionHeader from "./SectionHeader.svelte";
+  import Competences from "./Competences.svelte";
 </script>
 
 <section id="e5">
@@ -21,6 +22,7 @@
         Entretien de 30 minutes avec le jury pour approfondir les réalisations
       </li>
     </ul>
+    <Competences />
   </div>
 </section>
 

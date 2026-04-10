@@ -6,7 +6,6 @@
   import Header from "./lib/components/Header.svelte";
   import Footer from "./lib/components/Footer.svelte";
   import EpreuveE5 from "./lib/components/EpreuveE5.svelte";
-  import Competences from "./lib/components/Competences.svelte";
 </script>
 
 <div id="root">
@@ -25,7 +24,6 @@
     <section id="e5"><EpreuveE5 /></section>
   </main>
   <footer><Footer /></footer>
-  <Competences />
 </div>
 
 <style>
