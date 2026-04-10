@@ -22,7 +22,7 @@
     </li>
     <li>
       <h1>Bloc 2</h1>
-      <p>Gérer le patrimoine informatique</p>
+      <p>Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
       <video
         src="/ticket showcase.mp4"
         muted
@@ -60,6 +60,9 @@
   p {
     margin: 5px;
     font-family: var(--sfpro);
+  }
+  p {
+    color: var(--blue);
   }
 
   li {
