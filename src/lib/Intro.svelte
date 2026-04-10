@@ -36,7 +36,7 @@
       <a href="mailto:ballagyepro@gmail.com" class="intro-contact"> Contact</a>
     </div>
 
-    <div id="bgc-logo"><BgcLogo /></div>
+    <div id="bgc-logo"><BgcLogo/> </div> 
   </div>
 </section>
 

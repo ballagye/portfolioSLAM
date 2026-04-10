@@ -327,6 +327,7 @@
   :global([data-command-root] > * + *) {
     border-top: 1px solid var(--light-indigo2);
   }
+  
   :global([data-command-input]) {
     height: var(--h-input);
     background: var(--indigo);
