@@ -1,5 +1,8 @@
 <script lang="ts">
   import Command from "./Command.svelte";
+  import Veille from "../../routes/Veille.svelte";
+  import { Router, Link, Route } from "svelte5-router";
+  let url = $state("");
 </script>
 
 <header>
@@ -10,7 +13,12 @@
       <li><a href="./#about">A propos</a></li>
       <li><a href="./#experience">Expérience</a></li>
       <li>Epreuves</li>
-      <li>Veille Technologique</li>
+      <Router {url}>
+        <Link to="/Veille">
+          <li>Veille Technologique</li>
+        </Link>
+        <Route path="/Veille" component={Veille} />
+      </Router>
 
       <a href="src\assets\cv.pdf" class="cv-button" target="_blank">CV</a>
 

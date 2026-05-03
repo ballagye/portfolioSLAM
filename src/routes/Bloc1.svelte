@@ -209,6 +209,44 @@ cd /var/www/html/ </span>
   </div>
 </div>
 
+<div class="bloc1">
+  <div class="border">
+    <Bloc
+      competences="Compétence 3 - Mettre en place et vérifier les niveaux d'habilitation associés à un service"
+      projectTitle="Configuration des droits d'accès et des rôles utilisateurs dans GLPI"
+      date="Octobre 2025"
+      contexte="Réalisation:"
+    />
+    <p>
+      Dans le cadre d'un TP sur GLPI, les niveaux d'habilitation ont été
+      configurés afin d'adapter les droits d'accès de chaque utilisateur selon
+      son rôle au sein d'une entreprise fictive.
+    </p>
+
+    <p class="section-title">1. Définition des rôles</p>
+    <ul class="tp-list">
+      <li>
+        <strong>Technicien</strong> : consultation et clôture des tickets d'incidents
+      </li>
+      <li>
+        <strong>Administrateur</strong> : gestion complète des tickets et attribution
+        des rôles technicien ou utilisateur
+      </li>
+      <li>
+        <strong>Super Administrateur</strong> : accès total à l'ensemble des fonctionnalités
+        de l'instance GLPI
+      </li>
+    </ul>
+
+    <p class="section-title">2. Vérification des habilitations</p>
+    <p>
+      Des tests de connexion ont été réalisés avec chaque type de compte afin de
+      valider que les droits attribués correspondaient bien au périmètre défini
+      pour chaque rôle.
+    </p>
+  </div>
+</div>
+
 <style>
   .bloc-title {
     display: flex;
