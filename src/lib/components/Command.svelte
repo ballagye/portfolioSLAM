@@ -89,12 +89,14 @@
               </Command.GroupHeading>
               <Command.GroupItems>
                 <Command.LinkItem
+                  href="./#e5"
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["bts", "bts sio", "sio", "epreuves", "e5", "E5"]}
                 >
                   <FolderCode class="size-4" />
                   Epreuve E5
                 </Command.LinkItem>
+
                 <Command.LinkItem
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["bts", "bts sio", "sio", "epreuves", "e6", "E6"]}
@@ -327,7 +329,7 @@
   :global([data-command-root] > * + *) {
     border-top: 1px solid var(--light-indigo2);
   }
-  
+
   :global([data-command-input]) {
     height: var(--h-input);
     background: var(--indigo);

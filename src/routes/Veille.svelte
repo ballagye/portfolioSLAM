@@ -2,8 +2,11 @@
   import { LinkPreview } from "bits-ui";
   import SectionHeader from "../lib/components/SectionHeader.svelte";
   import { Info } from "@lucide/svelte";
+  import Articles from "../lib/components/Articles.svelte";
+  import Header from "../lib/components/Header.svelte";
 </script>
 
+<header><Header /></header>
 <div class="veille">
   <div class="header-row">
     <SectionHeader title={"Veille Technologique"} />
@@ -26,7 +29,7 @@
     </LinkPreview.Root>
   </div>
 
-  <h2>
+  <h2 class="title">
     La <span class="colored">Computer Vision</span> : quand les machines apprennent
     à voir le monde
   </h2>
@@ -95,12 +98,92 @@
       <div class="cards">Détection d'objets</div>
     </div>
   </div>
+  <div>
+    <Articles />
+  </div>
+  <h2>Comment fonctionne un système de Computer Vision ?</h2>
+  <h3 class="none">1. Acquisition de l'image</h3>
+  <p>
+    Une caméra ou un capteur capture une image ou une vidéo transmise au système
+    de traitement.
+  </p>
+  <h3 class="none">2. Prétraitement</h3>
+  <p>
+    L'image est nettoyée et normalisée : réduction du bruit, amélioration du
+    contraste, redimensionnement.
+  </p>
+  <h3 class="none">3. Extraction des caractéristiques</h3>
+  <p>
+    Un réseau de neurones (CNN ou Vision Transformer) analyse l'image et
+    identifie des formes, contours et textures significatifs.
+  </p>
+  <h3 class="none">4. Classification / Détection</h3>
+  <p>
+    Le modèle associe les caractéristiques à des catégories connues et génère
+    une réponse avec un score de confiance.
+  </p>
+  <h3 class="none">5. Action ou alerte</h3>
+  <p>
+    Le résultat est transmis : rapport automatique, alerte en temps réel, ou
+    décision automatisée selon le contexte.
+  </p>
+  <h2>Conclusion</h2>
+  <p>
+    La <span class="colored">Computer Vision</span> est l'une des technologies
+    les plus concrètes et les plus impactantes de l'informatique aujourd'hui.
+    Des tunnels du métro parisien aux salles d'opération, elle transforme des
+    tâches manuelles répétitives en processus
+    <span class="colored">automatisés</span>, précis et continus. Son
+    développement soulève néanmoins des questions légitimes sur la
+    <span class="colored">vie privée</span>, les biais algorithmiques et la
+    place de l'humain dans la chaîne de décision.
+    <br />
+    <br />
+    Cette veille renforce mon intérêt pour le
+    <span class="colored">machine learning</span> et le traitement de données
+    visuelles, deux compétences centrales dans ma future spécialisation en Big
+    Data et Machine Learning. Comprendre comment entraîner, évaluer et encadrer
+    ces modèles est un enjeu aussi
+    <span class="colored">technique qu'éthique</span>.
+  </p>
+
+  <h2>Glossaire</h2>
+  <h3 class="none">/ Computer Vision</h3>
+  <p>
+    Domaine de l'informatique permettant aux machines d'analyser et
+    d'interpréter des images et vidéos, en reproduisant les capacités visuelles
+    humaines.
+  </p>
+  <h3 class="none">/ CNN (Convolutional Neural Network)</h3>
+  <p>
+    Réseau de neurones spécialisé dans le traitement d'images. Il analyse les
+    pixels par couches successives pour identifier des formes, textures et
+    objets.
+  </p>
+  <h3 class="none">/ Vision Transformer (ViT)</h3>
+  <p>
+    Architecture plus récente que les CNN, qui utilise un mécanisme d'attention
+    pour analyser les relations entre différentes parties d'une image.
+  </p>
+  <h3 class="none">/ Deep Learning</h3>
+  <p>
+    Sous-domaine du machine learning utilisant des réseaux de neurones à
+    plusieurs couches pour apprendre automatiquement à partir de grandes
+    quantités de données visuelles.
+  </p>
+  <h3 class="none">/ AI Act</h3>
+  <p>
+    Premier règlement mondial sur l'IA adopté par l'Union Européenne en 2024.
+    Classe les systèmes de Computer Vision selon leur niveau de risque et impose
+    des obligations de transparence et de contrôle humain.
+  </p>
 </div>
 
 <style>
   .veille {
     margin: 0 auto;
     max-width: 1500px;
+    padding: 8em 0em 0em;
   }
 
   .header-row {
@@ -200,6 +283,9 @@
     flex-direction: row;
     gap: 100px;
   }
+  .title {
+    margin-bottom: 40px;
+  }
   .cards {
     display: inline-block;
     padding: 0.25rem 0.75rem;
@@ -211,5 +297,12 @@
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     font-family: var(--sfpro);
+  }
+  .none::after {
+    top: -7px;
+    width: 300px;
+    height: 0px;
+    margin-left: 0px;
+    background-color: var(--lightest-indigo);
   }
 </style>

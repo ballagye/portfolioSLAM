@@ -9,6 +9,7 @@
   import Footer from "./lib/components/Footer.svelte";
   import EpreuveE5 from "./lib/components/EpreuveE5.svelte";
   import Veille from "./routes/Veille.svelte";
+  import EpreuveE6 from "./lib/components/EpreuveE6.svelte";
 </script>
 
 <Router>
@@ -30,6 +31,7 @@
         </section>
         <section id="experience"><Experience /></section>
         <section id="e5"><EpreuveE5 /></section>
+        <section><EpreuveE6 /></section>
       </main>
       <footer><Footer /></footer>
     </div>

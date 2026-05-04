@@ -7,7 +7,7 @@
 
 <header>
   <nav>
-    <h1>Balla Gueye</h1>
+    <h1><a href="./#intro"> Balla Gueye</a></h1>
     <ul>
       <li><a href="./#bts-sio">BTS</a></li>
       <li><a href="./#about">A propos</a></li>
