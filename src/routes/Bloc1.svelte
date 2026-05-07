@@ -1,130 +1,182 @@
 <script lang="ts">
   import Bloc from "../lib/components/Bloc.svelte";
+  import ProjetAssocie from "../lib/components/ProjetAssocie.svelte";
+  import { MoveUpRight } from "@lucide/svelte";
+
+  let dialog: HTMLDialogElement | undefined = undefined;
+  let dialog2: HTMLDialogElement | undefined = undefined;
+  let dialog3: HTMLDialogElement | undefined = undefined;
+
+  function openDialog() {
+    dialog?.showModal();
+  }
+  function closeDialog() {
+    dialog?.close();
+  }
+  function openDialog2() {
+    dialog2?.showModal();
+  }
+  function closeDialog2() {
+    dialog2?.close();
+  }
+  function openDialog3() {
+    dialog3?.showModal();
+  }
+  function closeDialog3() {
+    dialog3?.close();
+  }
+  let dialog4: HTMLDialogElement | undefined = undefined;
+  function openDialog4() {
+    dialog4?.showModal();
+  }
+  function closeDialog4() {
+    dialog4?.close();
+  }
+  let dialog5: HTMLDialogElement | undefined = undefined;
+  function openDialog5() {
+    dialog5?.showModal();
+  }
+  function closeDialog5() {
+    dialog5?.close();
+  }
+  let dialog6: HTMLDialogElement | undefined = undefined;
+  function openDialog6() {
+    dialog6?.showModal();
+  }
+  function closeDialog6() {
+    dialog6?.close();
+  }
 </script>
 
 <div class="bloc-title">
   <h2>/ Bloc 1 Gérer le patrimoine informatique</h2>
 </div>
-<div class="bloc1">
-  <div class="border">
-    <Bloc
-      competences="Compétence 1 - Recenser et identifier les ressources numériques"
-      projectTitle="Installation et configuration de GLPI"
-      date="Octobre 2025"
-      contexte="Réalisation:"
-    />
+<div class="competences-grid">
+  <div
+    class="competences"
+    role="button"
+    tabindex="0"
+    onclick={openDialog}
+    onkeydown={(e) => e.key === "Enter" && openDialog()}
+  >
+    <div class="valide">
+      <h2 class="comp-title">C1</h2>
+      <MoveUpRight />
+    </div>
+    <h3 class="rea-title">Recenser et identifier les ressources numériques</h3>
     <p>
-      Dans le cadre des travaux pratiques associés à l'unité d'enseignement
-      Support et mise à disposition de services informatiques, il a été procédé
-      au déploiement d'une solution GLPI sur une machine virtuelle fonctionnant
-      sous Debian, dans le but d'automatiser le recensement des ressources
-      matérielles et logicielles (postes de travail, serveurs, périphériques) et
-      d'en centraliser la gestion au sein d'une interface web unifiée.
+      Recenser et identifier les ressources numériques à l'aide d'un outil de
+      gestion de parc…
     </p>
-    <p class="section-title">1. Prérequis système</p>
-    <ul class="tp-list">
-      <li>Serveur web Apache2</li>
-      <li>Système de gestion de base de données MariaDB</li>
-      <li>
-        PHP 8.x accompagné des extensions requises : curl, gd, mbstring, xml,
-        zip, intl, mysql
-      </li>
-    </ul>
+    <p class="rea-desc">Inventaire du parc GLPI -- Formation</p>
+  </div>
 
-    <p class="section-title">2. Installation de l'environnement (Debian)</p>
-    <pre><span
-        ># Mise à jour du système
-apt update && apt upgrade -y
-
-# Installation d'Apache, PHP et de ses extensions
-apt install apache2 mariadb-server -y
-apt install php libapache2-mod-php php-mysql php-curl php-gd php-intl php-zip php-xml php-mbstring -y
-
-# Activation du service Apache au démarrage du système
-systemctl enable apache2
-systemctl start apache2
-
-# Procédure de sécurisation de MariaDB
-
-mysql_secure_installation</span
-      ></pre>
-
-    <p class="section-title">3. Configuration de la base de données</p>
-    <pre><span>mysql -u root -p</span>
- 
-<span class="hl"
-        >CREATE DATABASE glpi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;</span
-      >
-<span class="hl"
-        >CREATE USER 'glpi'@'localhost' IDENTIFIED BY 'mot_de_passe_securise';</span
-      >
-<span class="hl"
-        >GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;</span
-      ></pre>
-
-    <p class="section-title">4. Installation de GLPI</p>
-    <pre><span
-        >wget https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz 
-cd /var/www/html/ </span>
- 
-<span>tar -xvzf glpi-10.0.15.tgz</span>
- 
-<span>chown -R www-data:www-data glpi</span>
-<span>chmod -R 755 glpi</span>
- 
-<span>a2enmod rewrite</span>
-<span>systemctl restart apache2</span></pre>
-
+  <div
+    class="competences"
+    role="button"
+    tabindex="0"
+    onclick={openDialog2}
+    onkeydown={(e) => e.key === "Enter" && openDialog2()}
+  >
+    <div class="valide">
+      <h2 class="comp-title">C2</h2>
+      <MoveUpRight />
+    </div>
+    <h3 class="rea-title">Exploiter des référentiels, normes et standards</h3>
     <p>
-      La finalisation de l'installation s'effectue par le biais de l'interface
-      web disponible à l'adresse <code
-        ><span> http://IP_SERVEUR/glpi</span></code
-      >. Il convient, lors de cette étape, de renseigner les paramètres de
-      connexion à la base de données préalablement configurée. À l'issue de
-      cette procédure, le répertoire <code>/install</code> est supprimé afin d'éliminer
-      tout vecteur de vulnérabilité potentielle.
+      Exploiter des référentiels, normes et standards adoptés par le prestataire
+      informatique…
     </p>
+    <p class="rea-desc">Configuration GLPI / ITIL -- Formation</p>
+  </div>
 
-    <p class="section-title">5. Mise en place de l'inventaire automatique</p>
+  <div
+    class="competences"
+    role="button"
+    tabindex="0"
+    onclick={openDialog3}
+    onkeydown={(e) => e.key === "Enter" && openDialog3()}
+  >
+    <div class="valide">
+      <h2 class="comp-title">C3</h2>
+      <MoveUpRight />
+    </div>
+    <h3 class="rea-title">
+      Mettre en place et vérifier les niveaux d'habilitation
+    </h3>
     <p>
-      Afin d'assurer la collecte automatisée des informations matérielles et
-      logicielles des équipements du parc informatique, la configuration de
-      l'agent GLPI Inventory a été réalisée selon les étapes suivantes :
+      Mettre en place et vérifier les niveaux d'habilitation associés à un
+      service…
     </p>
-    <ul class="tp-list">
-      <li>
-        Activation du plugin GLPI Inventory via la Marketplace de l'application.
-      </li>
-      <li>
-        Déploiement de l'agent GLPI sur l'ensemble des postes clients concernés.
-      </li>
-      <li>
-        Définition du serveur cible au sein de la configuration de l'agent :
-      </li>
-    </ul>
-    <pre><span>glpi-agent --server http://IP_SERVEUR/glpi</span></pre>
+    <p class="rea-desc">Droits d'accès GLPI -- Formation</p>
+  </div>
 
+  <div
+    class="competences"
+    role="button"
+    tabindex="0"
+    onclick={openDialog4}
+    onkeydown={(e) => e.key === "Enter" && openDialog4()}
+  >
+    <div class="valide">
+      <h2 class="comp-title">C4</h2>
+      <MoveUpRight />
+    </div>
+    <h3 class="rea-title">Mettre en place un outil de gestion des services</h3>
     <p>
-      Une fois le déploiement effectué, les équipements remontent
-      automatiquement leurs informations dans la console GLPI, comprenant
-      notamment :
+      Déploiement et validation d'un outil d'automatisation sur projets
+      ferroviaires réels…
     </p>
-    <ul class="tp-list">
-      <li>
-        Caractéristiques matérielles (processeur, mémoire vive, capacité de
-        stockage)
-      </li>
-      <li>Inventaire des logiciels installés</li>
-      <li>Adresse IP et paramètres réseau associés</li>
-      <li>Numéros de série et état courant du matériel</li>
-    </ul>
+    <p class="rea-desc">Automatisation Excel -- Entreprise</p>
+  </div>
+
+  <div
+    class="competences"
+    role="button"
+    tabindex="0"
+    onclick={openDialog5}
+    onkeydown={(e) => e.key === "Enter" && openDialog5()}
+  >
+    <div class="valide">
+      <h2 class="comp-title">C5</h2>
+      <MoveUpRight />
+    </div>
+    <h3 class="rea-title">Gérer les sauvegardes</h3>
+    <p>
+      Génération et archivage des fichiers de configuration des switchs réseau…
+    </p>
+    <p class="rea-desc">Sauvegardes switchs -- Alstom</p>
+  </div>
+
+  <div
+    class="competences"
+    role="button"
+    tabindex="0"
+    onclick={openDialog6}
+    onkeydown={(e) => e.key === "Enter" && openDialog6()}
+  >
+    <div class="valide">
+      <h2 class="comp-title">C6</h2>
+      <MoveUpRight />
+    </div>
+    <h3 class="rea-title">
+      Vérifier le respect des règles d'utilisation des ressources numériques
+    </h3>
+    <p>
+      Audit et correction des règles d'usage lors de la refonte d'un site
+      vitrine…
+    </p>
+    <p class="rea-desc">Conformité web -- Entreprise</p>
   </div>
 </div>
 
-<div class="bloc1">
-  <div class="border">
+<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
+<dialog
+  bind:this={dialog2}
+  onclick={(e) => e.target === dialog2 && closeDialog2()}
+>
+  <div class="dialog-inner">
+    <button class="dialog-close" onclick={closeDialog2}>✕</button>
     <Bloc
       competences="Compétence 2 - Exploiter des référentiels, normes et standards adoptés par le prestataire informatique"
       projectTitle="Configuration des règles de gestion des incidents dans GLPI selon le référentiel ITIL"
@@ -132,85 +184,105 @@ cd /var/www/html/ </span>
       contexte="Réalisation:"
     />
     <p>
-      Dans le cadre des travaux pratiques associés à l'unité d'enseignement
-      Support et mise à disposition de services informatiques, il a été procédé
-      à la configuration d'une instance GLPI en appliquant les bonnes pratiques
-      du référentiel ITIL, afin de structurer la gestion des incidents au sein
-      d'une entreprise fictive. L'objectif était de mettre en place un système
-      de ticketing cohérent avec les standards adoptés par les prestataires
-      informatiques professionnels.
+      Dans le cadre d'un TP sur GLPI, j'ai configuré une instance en appliquant
+      les bonnes pratiques du référentiel ITIL pour structurer la gestion des
+      incidents au sein d'une entreprise fictive.
     </p>
 
-    <p class="section-title">1. Compréhension du référentiel ITIL</p>
-    <p>
-      ITIL (Information Technology Infrastructure Library) est un ensemble de
-      bonnes pratiques destinées à la gestion des services informatiques. Dans
-      le cadre de ce TP, les concepts suivants ont été appliqués :
-    </p>
     <ul class="tp-list">
       <li>
-        <strong>Gestion des incidents</strong> : traitement structuré des dysfonctionnements
-        affectant les utilisateurs
+        Définition de 4 niveaux de priorité selon la matrice urgence/impact ITIL
+        : Très haute, Haute, Moyenne, Basse
       </li>
       <li>
-        <strong>Niveaux de priorité</strong> : classification des incidents selon
-        leur urgence et leur impact
+        Création de tickets d'incidents types : panne réseau (Très haute), accès
+        refusé à un logiciel (Haute)
       </li>
+      <li>Catégorisation de chaque ticket selon son type de problème</li>
       <li>
-        <strong>Catégorisation</strong> : organisation des tickets par type de problème
-        afin d'en faciliter le traitement
+        Attribution des tickets aux techniciens compétents selon la catégorie
       </li>
     </ul>
 
-    <p class="section-title">2. Configuration des niveaux de priorité</p>
+    <p class="section-title">Bilan</p>
     <p>
-      Quatre niveaux de priorité ont été définis dans GLPI, conformément à la
-      matrice urgence/impact préconisée par ITIL :
+      La création du référentiel a été assez intuitive à mettre en place. J'ai
+      dû consulter la documentation GLPI pour configurer les bonnes règles de
+      gestion des tickets et appliquer les bonnes pratiques ITIL. Cela m'a
+      appris à me documenter de manière autonome pour configurer correctement
+      un outil professionnel.
     </p>
-    <ul class="tp-list">
-      <li>
-        <strong>Très haute</strong> : incident bloquant tout ou partie de l'activité
-        de l'entreprise, nécessitant une intervention immédiate
-      </li>
-      <li>
-        <strong>Haute</strong> : impact fort sur un service ou un groupe d'utilisateurs,
-        traitement prioritaire requis
-      </li>
-      <li>
-        <strong>Moyenne</strong> : gêne notable pour l'utilisateur, mais poursuite
-        de l'activité possible
-      </li>
-      <li>
-        <strong>Basse</strong> : incident mineur sans conséquence immédiate sur la
-        productivité
-      </li>
-    </ul>
-
-    <p class="section-title">3. Création des cas d'incidents types</p>
-    <p>
-      Des modèles d'incidents représentatifs des situations courantes en
-      entreprise ont été créés et associés à un niveau de priorité adapté :
-    </p>
-    <ul class="tp-list">
-      <li>
-        <strong>Panne réseau</strong> : perte de connectivité affectant un ou
-        plusieurs postes de travail — priorité <em>Très haute</em>
-      </li>
-      <li>
-        <strong>Accès refusé à un logiciel</strong> : impossibilité pour un
-        utilisateur d'accéder à une application métier — priorité <em>Haute</em>
-      </li>
-    </ul>
-    <p>
-      Chaque incident a été catégorisé et rattaché à un niveau de priorité afin
-      d'assurer un traitement rapide et conforme aux bonnes pratiques du
-      référentiel ITIL.
-    </p>
+    <ProjetAssocie
+      projets={[
+        {
+          nom: "Mise en place d'un environnement GLPI",
+          contexte: "Formation · Oct 2025",
+        },
+      ]}
+    />
+    <div class="proof">
+      <p class="proof-label">Démonstration</p>
+      <img src="/Screenshot_2.png" alt="Preuve ITIL GLPI" />
+    </div>
   </div>
-</div>
+</dialog>
 
-<div class="bloc1">
-  <div class="border">
+<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
+<dialog
+  bind:this={dialog}
+  onclick={(e) => e.target === dialog && closeDialog()}
+>
+  <div class="dialog-inner">
+    <button class="dialog-close" onclick={closeDialog}>✕</button>
+    <Bloc
+      competences="Compétence 1 - Recenser et identifier les ressources numériques"
+      projectTitle="Installation et configuration de GLPI"
+      date="Octobre 2025"
+      contexte="Réalisation:"
+    />
+    <p>
+      J'ai installé et configuré GLPI sur une machine virtuelle Debian pour
+      automatiser le recensement du parc informatique.
+    </p>
+    <ul class="tp-list">
+      <li>Installation de l'environnement serveur : Apache, MariaDB, PHP</li>
+      <li>Déploiement de GLPI et configuration de la base de données</li>
+      <li>Mise en place de l'agent d'inventaire sur les postes clients</li>
+      <li>
+        Remontée automatique des informations matérielles et logicielles dans
+        GLPI
+      </li>
+    </ul>
+    <p class="section-title">Bilan</p>
+    <p>
+      La mise en place a demandé du temps, notamment pour comprendre le
+      fonctionnement de l'agent GLPI et sa remontée des données. En groupe, nous
+      avons fini par réussir à inventorier l'ensemble du parc avec les adresses
+      IP via l'agent. Cette expérience m'a appris l'importance d'un référentiel
+      centralisé pour gérer un parc informatique.
+    </p>
+    <ProjetAssocie
+      projets={[
+        {
+          nom: "Mise en place d'un environnement GLPI",
+          contexte: "Formation · Oct 2025",
+        },
+      ]}
+    />
+    <div class="proof">
+      <p class="proof-label">Démonstration</p>
+      <img src="/image.png" alt="Preuve GLPI" />
+    </div>
+  </div>
+</dialog>
+
+<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
+<dialog
+  bind:this={dialog3}
+  onclick={(e) => e.target === dialog3 && closeDialog3()}
+>
+  <div class="dialog-inner">
+    <button class="dialog-close" onclick={closeDialog3}>✕</button>
     <Bloc
       competences="Compétence 3 - Mettre en place et vérifier les niveaux d'habilitation associés à un service"
       projectTitle="Configuration des droits d'accès et des rôles utilisateurs dans GLPI"
@@ -218,34 +290,184 @@ cd /var/www/html/ </span>
       contexte="Réalisation:"
     />
     <p>
-      Dans le cadre d'un TP sur GLPI, les niveaux d'habilitation ont été
-      configurés afin d'adapter les droits d'accès de chaque utilisateur selon
-      son rôle au sein d'une entreprise fictive.
+      J'ai configuré les niveaux d'accès des utilisateurs dans GLPI en
+      attribuant un profil adapté à chaque rôle.
     </p>
-
-    <p class="section-title">1. Définition des rôles</p>
     <ul class="tp-list">
       <li>
-        <strong>Technicien</strong> : consultation et clôture des tickets d'incidents
+        8 profils définis : Self-Service, Observer, Hotliner, Technician,
+        Supervisor, Admin, Super-Admin, Read-Only
+      </li>
+      <li>Droits ajustés pour chaque profil selon son périmètre d'action</li>
+      <li>Tests de connexion pour valider les accès de chaque profil</li>
+    </ul>
+    <p class="section-title">Bilan</p>
+    <p>
+      La configuration des droits d'accès par rôle dans GLPI s'est révélée
+      assez intuitive à mettre en place. J'ai appliqué les bonnes pratiques en
+      attribuant à chaque profil uniquement les permissions nécessaires à sa
+      fonction, ce qui m'a permis de comprendre l'importance du principe du
+      moindre privilège en entreprise.
+    </p>
+    <ProjetAssocie
+      projets={[
+        { nom: "Droits d'accès GLPI", contexte: "Formation · Oct 2025" },
+      ]}
+    />
+    <div class="proof">
+      <p class="proof-label">Démonstration</p>
+      <img src="/Screenshot_1.png" alt="Preuve habilitations GLPI" />
+    </div>
+  </div>
+</dialog>
+
+<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
+<dialog
+  bind:this={dialog4}
+  onclick={(e) => e.target === dialog4 && closeDialog4()}
+>
+  <div class="dialog-inner">
+    <button class="dialog-close" onclick={closeDialog4}>✕</button>
+    <Bloc
+      competences="Compétence 4 - Vérification des conditions de la continuité d'un service"
+      projectTitle="Automatisation de l'import de données Excel sur projets ferroviaires"
+      date="Mai - Juillet 2025"
+      contexte="Réalisation:"
+    />
+    <p>
+      J'ai validé mon outil d'automatisation en le testant sur deux projets
+      ferroviaires réels chez Alstom : la ligne de Turin et la ligne du Caire.
+    </p>
+    <ul class="tp-list">
+      <li>
+        Import des données Excel sur la ligne de Turin et vérification des
+        résultats
       </li>
       <li>
-        <strong>Administrateur</strong> : gestion complète des tickets et attribution
-        des rôles technicien ou utilisateur
+        Même test sur la ligne du Caire pour valider la généricité de l'outil
       </li>
       <li>
-        <strong>Super Administrateur</strong> : accès total à l'ensemble des fonctionnalités
-        de l'instance GLPI
+        Recueil des retours des ingénieurs réseau pour identifier les
+        ajustements
       </li>
     </ul>
-
-    <p class="section-title">2. Vérification des habilitations</p>
+    <p class="section-title">Bilan</p>
     <p>
-      Des tests de connexion ont été réalisés avec chaque type de compte afin de
-      valider que les droits attribués correspondaient bien au périmètre défini
-      pour chaque rôle.
+      Cette mission de gestion des sauvegardes m'a permis de valider la
+      compétence en contexte professionnel réel. Les retours positifs des
+      ingénieurs réseau et de mon tuteur, ainsi que l'utilisation du script sur
+      plusieurs projets ferroviaires, confirment que la solution de sauvegarde
+      centralisée répond bien au besoin de l'équipe.
     </p>
+    <ProjetAssocie
+      projets={[
+        {
+          nom: "Développement script Python HPE",
+          contexte: "Stage Alstom · 2025",
+        },
+        {
+          nom: "Extraction données Excel avec pandas",
+          contexte: "Stage Alstom · 2025",
+        },
+      ]}
+    />
+    <div class="proof">
+      <p class="proof-label">Démonstration</p>
+      <img
+        src="/Screenshot_3.png"
+        alt="Preuve automatisation projets ferroviaires"
+      />
+    </div>
   </div>
-</div>
+</dialog>
+
+<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
+<dialog
+  bind:this={dialog5}
+  onclick={(e) => e.target === dialog5 && closeDialog5()}
+>
+  <div class="dialog-inner">
+    <button class="dialog-close" onclick={closeDialog5}>✕</button>
+    <Bloc
+      competences="Compétence 5 - Gérer les sauvegardes"
+      projectTitle="Génération et archivage des fichiers de configuration des switchs réseau"
+      date="Mai - Juillet 2025"
+      contexte="Réalisation:"
+    />
+    <p>
+      Durant mon stage chez Alstom, j'ai centralisé les fichiers de
+      configuration des switchs HPE pour garantir leur traçabilité et faciliter
+      les interventions futures.
+    </p>
+    <ul class="tp-list">
+      <li>Collecte des fichiers .cfg de chaque switch HPE du projet</li>
+      <li>Nommage structuré pour identifier rapidement chaque équipement</li>
+      <li>
+        Rédaction d'une documentation expliquant l'organisation et la procédure
+        de restauration
+      </li>
+      <li>
+        Dépôt sur SharePoint pour rendre les sauvegardes accessibles à toute
+        l'équipe
+      </li>
+    </ul>
+    <p class="section-title">Bilan</p>
+    <p>
+      Le script a connu plusieurs versions successives, toutes déposées sur
+      SharePoint afin que les ingénieurs réseau puissent y accéder et les
+      utiliser directement. Cette centralisation garantit que les configurations
+      des switchs sont toujours sauvegardées et disponibles, quelle que soit
+      l'évolution du script.
+    </p>
+    <ProjetAssocie
+      projets={[
+        {
+          nom: "Archivage fichiers de configuration switchs HPE",
+          contexte: "Stage Alstom · 2025",
+        },
+      ]}
+    />
+  </div>
+</dialog>
+
+<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
+<dialog
+  bind:this={dialog6}
+  onclick={(e) => e.target === dialog6 && closeDialog6()}
+>
+  <div class="dialog-inner">
+    <button class="dialog-close" onclick={closeDialog6}>✕</button>
+    <Bloc
+      competences="Compétence 6 - Vérifier le respect des règles d'utilisation des ressources numériques"
+      projectTitle="Audit et mise en conformité lors de la refonte d'un site vitrine"
+      date="Novembre - Décembre 2025"
+      contexte="Réalisation:"
+    />
+    <p>
+      Lors de mon deuxième stage, j'ai identifié et corrigé des manquements aux
+      règles d'utilisation des ressources numériques sur un site vitrine.
+    </p>
+    <ul class="tp-list">
+      <li>Absence de copyright détectée — mentions ajoutées sur le site</li>
+      <li>
+        Polices non licenciées remplacées par des alternatives libres de droits
+      </li>
+      <li>
+        Problèmes signalés directement aux membres de l'équipe en présentiel
+      </li>
+    </ul>
+    <p class="section-title">Bilan</p>
+    <p>
+      Les corrections ont été intégrées dès la phase de refonte, garantissant la
+      conformité du site sans retouche post-livraison.
+    </p>
+    <ProjetAssocie
+      projets={[
+        { nom: "Refonte site vitrine Svelte", contexte: "Stage 2 · 2025" },
+      ]}
+    />
+  </div>
+</dialog>
 
 <style>
   .bloc-title {
@@ -257,18 +479,7 @@ cd /var/www/html/ </span>
   h2 {
     font-family: var(--sfpro);
   }
-  .bloc1 {
-    display: flex;
-    justify-content: center;
-  }
 
-  .border {
-    border: 1px, solid;
-    padding: 10px 10px;
-    padding-top: 0px;
-    border-radius: 7px;
-    max-width: 1000px;
-  }
   p {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -277,10 +488,125 @@ cd /var/www/html/ </span>
   li {
     font-family: var(--sfpro);
   }
+  .rea-title {
+    font-family: var(--sfpro);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .rea-desc {
+    font-family: var(--ibm);
+    color: var(--blue);
+  }
+  .comp-title {
+    color: var(--blue);
+  }
   .section-title {
     font-weight: 800;
   }
-  span {
-    background-color: var(--indigo-500);
+  .competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .competences {
+    height: 270px;
+    padding: 20px 24px 20px 24px;
+    background-color: var(--dark-indigo);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes backdrop-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  dialog {
+    background: var(--dark-indigo, #1a1a2e);
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0;
+    max-width: 800px;
+    width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+    color: inherit;
+  }
+
+  dialog[open] {
+    animation: dialog-in 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    animation: backdrop-in 0.25s ease both;
+  }
+
+  .dialog-inner {
+    padding: 24px;
+    overflow-y: scroll;
+    max-height: 90vh;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .dialog-close {
+    position: sticky;
+    top: 0;
+    float: right;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 0 0 8px 8px;
+  }
+
+  .dialog-close:hover {
+    opacity: 1;
+  }
+
+  .proof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .proof-label {
+    font-family: var(--ibm);
+    color: var(--blue);
+    margin-bottom: 12px;
+  }
+
+  .proof img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  .valide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 </style>
