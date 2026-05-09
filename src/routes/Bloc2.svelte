@@ -101,8 +101,10 @@
     </ul>
     <p class="section-title">Bilan</p>
     <p>
-      Chaque demande est automatiquement classée et orientée vers le bon
-      technicien, réduisant les délais de prise en charge.
+      J'ai catégorisé plusieurs tickets afin de mettre en place un service
+      informatique proche des pratiques en entreprise. Cette organisation facilite
+      la résolution des demandes en orientant chaque ticket vers la bonne
+      catégorie et le bon technicien, réduisant ainsi les délais de traitement.
     </p>
     <ProjetAssocie projets={[{ nom: "Paramétrage du système de ticketing GLPI", contexte: "Formation · Oct 2025" }]} />
     <div class="proof">
@@ -170,7 +172,10 @@
     </ul>
     <p class="section-title">Bilan</p>
     <p>
-      Le code est devenu plus lisible, plus modulaire et plus facile à faire évoluer.
+      Mon code initial présentait plusieurs problèmes de lisibilité et de
+      compréhension. J'ai entrepris une refactorisation complète afin de le
+      structurer de manière claire et modulaire, permettant à tout développeur
+      de le comprendre et de faire évoluer le projet plus facilement à l'avenir.
     </p>
     <ProjetAssocie projets={[{ nom: "Développement script Python HPE", contexte: "Stage Alstom · 2025" }]} />
   </div>

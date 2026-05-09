@@ -106,8 +106,10 @@
 
     <p class="section-title">Bilan</p>
     <p>
-      Dans les deux cas, les tests ont permis d'identifier des problèmes et de
-      les corriger avant la mise en service finale.
+      Le mode verbose a été essentiel pour identifier tous les problèmes liés
+      aux connexions SSH sur les serveurs, notamment les droits d'accès sur la
+      machine virtuelle et la vérification de l'accessibilité des hôtes. Ces
+      tests ont permis de corriger les erreurs avant la mise en service finale.
     </p>
     <ProjetAssocie projets={[
       { nom: "Hackathon", contexte: "Formation · 2025" },

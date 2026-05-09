@@ -458,8 +458,10 @@
     </ul>
     <p class="section-title">Bilan</p>
     <p>
-      Les corrections ont été intégrées dès la phase de refonte, garantissant la
-      conformité du site sans retouche post-livraison.
+      C'est mon tuteur de stage qui m'a signalé l'absence de polices libres de
+      droit sur le site. J'ai effectué des recherches pour sélectionner une
+      police adaptée et conforme légalement, et j'ai intégré la correction avant
+      la publication en veillant au respect des bonnes pratiques légales.
     </p>
     <ProjetAssocie
       projets={[
