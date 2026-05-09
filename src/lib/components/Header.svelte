@@ -1,6 +1,7 @@
 <script lang="ts">
   import Command from "./Command.svelte";
   import Veille from "../../routes/Veille.svelte";
+  import Projets from "../../routes/Projets.svelte";
   import { Router, Link, Route } from "svelte5-router";
   let url = $state("");
 </script>
@@ -12,15 +13,20 @@
       <li><a href="./#bts-sio">BTS</a></li>
       <li><a href="./#about">A propos</a></li>
       <li><a href="./#experience">Expérience</a></li>
-      <li>Epreuves</li>
+      <li><a href="./#e5">Épreuve E5</a></li>
+      <li><a href="./#e6">Épreuve E6</a></li>
       <Router {url}>
+        <Link to="/Projets">
+          <li>Projets</li>
+        </Link>
+        <Route path="/Projets" component={Projets} />
         <Link to="/Veille">
           <li>Veille Technologique</li>
         </Link>
         <Route path="/Veille" component={Veille} />
       </Router>
 
-      <a href="src\assets\cv.pdf" class="cv-button" target="_blank">CV</a>
+      <a href="/cv.pdf" class="cv-button" target="_blank">CV</a>
 
       <li><Command /></li>
     </ul>
@@ -96,7 +102,17 @@
     position: relative;
     transition: var(--transition);
   }
-  a:hover {
-    color: var(--blue);
+  a:hover { color: var(--blue); }
+  a:visited, a:active { color: inherit; }
+
+  :global(nav a) {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
   }
+  :global(nav a:hover) { color: var(--blue); }
+  :global(nav a:visited), :global(nav a:active) { color: inherit; }
+  :global(nav a.cv-button),
+  :global(nav a.cv-button:visited),
+  :global(nav a.cv-button:active) { color: var(--blue); }
 </style>

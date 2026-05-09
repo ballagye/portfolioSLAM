@@ -109,8 +109,9 @@
   </p>
   <h3 class="none">2. Prétraitement</h3>
   <p>
-    L'image est nettoyée et normalisée : réduction du bruit, amélioration du
-    contraste, redimensionnement.
+    L'image est décomposée en <span class="colored">patterns de pixels</span>
+    reconnaissables par la machine, représentés sous forme de matrice de valeurs
+    numériques que le système peut traiter et analyser.
   </p>
   <h3 class="none">3. Extraction des caractéristiques</h3>
   <p>

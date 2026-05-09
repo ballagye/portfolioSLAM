@@ -144,6 +144,22 @@
       sein de l'équipe.
     </p>
     <ProjetAssocie projets={[{ nom: "Hackathon", contexte: "Formation · 2025" }]} />
+    <div class="proof">
+      <p class="proof-label">Démonstration</p>
+      <div class="proof-grid">
+        <div class="proof-item">
+          <img src="/Screenshot_9.png" alt="Trello Kanban hackathon" />
+          <p class="proof-caption">Hackathon — Tableau Kanban</p>
+        </div>
+        <div class="proof-item">
+          <img src="/screenshotchess.png" alt="ChessGame C" />
+        </div>
+        <div class="proof-item">
+          <img src="/mbkeducationgantt.png" alt="MBK Education Gantt" />
+          <p class="proof-caption">MBK Education — Planification des activités via un diagramme de Gantt</p>
+        </div>
+      </div>
+    </div>
   </div>
 </dialog>
 
@@ -266,4 +282,8 @@
   }
   .proof-label { font-family: var(--ibm); color: var(--blue); margin-bottom: 12px; }
   .proof img { max-width: 100%; border-radius: 6px; }
+  .proof-grid { display: flex; flex-direction: column; gap: 24px; width: 100%; }
+  .proof-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .proof-item img { max-width: 100%; border-radius: 6px; }
+  .proof-caption { font-family: var(--ibm); font-size: 11px; color: rgba(255,255,255,0.5); text-align: center; margin: 0; }
 </style>

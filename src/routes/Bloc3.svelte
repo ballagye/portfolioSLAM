@@ -371,8 +371,5 @@
     margin-bottom: 12px;
   }
 
-  .proof img {
-    max-width: 100%;
-    border-radius: 6px;
-  }
+  .proof img { max-width: 100%; border-radius: 6px; }
 </style>

@@ -1,6 +1,20 @@
 <script lang="ts">
   import SectionHeader from "./SectionHeader.svelte";
-  import { Tabs } from "bits-ui";
+  import { Tabs, Accordion } from "bits-ui";
+  import { ChevronDown } from "@lucide/svelte";
+
+  const compAlstom = [
+    { tags: ['C4', 'C5'], href: '/Bloc1', desc: 'Sauvegardes des configurations switches sur SharePoint et continuité du service réseau.' },
+    { tags: ['C8', 'C9'], href: '/Bloc2', desc: 'Diagnostic et résolution des connexions SSH, refactorisation du script SSHManager.' },
+    { tags: ['C13', 'C14'], href: '/Bloc4', desc: 'Cahier des charges du projet d\'automatisation et planification des étapes.' },
+    { tags: ['C16', 'C17', 'C18'], href: '/Bloc5', desc: 'Tests Ansible verbose, déploiement sur projets ferroviaires, guide utilisateur pour les ingénieurs réseau.' },
+  ];
+
+  const compSaigon = [
+    { tags: ['C6'], href: '/Bloc1', desc: 'Correction des polices libres de droit signalée par le tuteur, intégrée avant publication.' },
+    { tags: ['C9', 'C13'], href: '/Bloc2', desc: 'Développement de l\'application Java et conception de l\'architecture du projet.' },
+    { tags: ['C10', 'C12'], href: '/Bloc3', desc: 'Amélioration du front-end et évolution du site web de l\'organisation.' },
+  ];
 </script>
 
 <section class="experience-section">
@@ -48,7 +62,7 @@
           <ul>
             <li>
               Développé un script Python permettant la configuration automatique
-              de switches HPE sur l’ensemble du projet ferroviaire.
+              de switches HPE sur l'ensemble du projet ferroviaire.
             </li>
             <li>
               Manipulation des données Excel afin de générer les fichiers de
@@ -59,14 +73,33 @@
               physique pour valider son fonctionnement.
             </li>
             <li>
-              Déployé et centralisé les outils d’automatisation existants dans
+              Déployé et centralisé les outils d'automatisation existants dans
               Ansible.
             </li>
             <li>
               Étude des besoins des ingénieurs réseaux pour adapter les
-              solutions d’automatisation.
+              solutions d'automatisation.
             </li>
           </ul>
+          <Accordion.Root type="single" class="acc-root">
+            <Accordion.Item value="comp">
+              <Accordion.Trigger class="acc-trigger">
+                Voir les compétences <ChevronDown size={13} class="acc-chevron" />
+              </Accordion.Trigger>
+              <Accordion.Content class="acc-content">
+                <div class="comp-list">
+                  {#each compAlstom as g}
+                    <a href={g.href} class="comp-item">
+                      <span class="comp-tags">
+                        {#each g.tags as t}<span class="comp-tag">{t}</span>{/each}
+                      </span>
+                      <span class="comp-desc">{g.desc}</span>
+                    </a>
+                  {/each}
+                </div>
+              </Accordion.Content>
+            </Accordion.Item>
+          </Accordion.Root>
         </div>
       </Tabs.Content>
       <Tabs.Content value="saigon">
@@ -80,26 +113,45 @@
           <ul>
             <li>
               Modernisation des outils internes de en migrant le système de
-              gestion de stock et de comptabilité d’Excel vers une application
+              gestion de stock et de comptabilité d'Excel vers une application
               Java.
             </li>
             <li>
-              Conception de l’architecture de la nouvelle application Java.
+              Conception de l'architecture de la nouvelle application Java.
             </li>
             <li>
               Amélioration du front-end du site web et création de systèmes de
               commandes client.
             </li>
             <li>
-              Développement d’un tableau de bord permettant au personnel de
+              Développement d'un tableau de bord permettant au personnel de
               visualiser les commandes.
             </li>
 
             <li>
               Création et configuration de la base de données liée à
-              l’application depuis l’export Excel.
+              l'application depuis l'export Excel.
             </li>
           </ul>
+          <Accordion.Root type="single" class="acc-root">
+            <Accordion.Item value="comp">
+              <Accordion.Trigger class="acc-trigger">
+                Voir les compétences <ChevronDown size={13} class="acc-chevron" />
+              </Accordion.Trigger>
+              <Accordion.Content class="acc-content">
+                <div class="comp-list">
+                  {#each compSaigon as g}
+                    <a href={g.href} class="comp-item">
+                      <span class="comp-tags">
+                        {#each g.tags as t}<span class="comp-tag">{t}</span>{/each}
+                      </span>
+                      <span class="comp-desc">{g.desc}</span>
+                    </a>
+                  {/each}
+                </div>
+              </Accordion.Content>
+            </Accordion.Item>
+          </Accordion.Root>
         </div>
       </Tabs.Content>
     </Tabs.Root>
@@ -190,6 +242,65 @@
     position: absolute;
     left: -2px;
     color: var(--blue);
+  }
+
+  :global(.acc-root) { margin-top: 20px; max-width: 600px; }
+
+  :global(.acc-trigger) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: var(--blue);
+    font-family: var(--ibm);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.2s;
+  }
+  :global(.acc-trigger:hover) { opacity: 0.7; }
+  :global(.acc-trigger[data-state="open"] .acc-chevron) { transform: rotate(180deg); }
+  :global(.acc-chevron) { transition: transform 0.2s; }
+
+  .comp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .comp-item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .comp-item:hover { background: rgba(255, 255, 255, 0.08); }
+
+  .comp-tags {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+  }
+  .comp-tag {
+    font-family: var(--ibm);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 3px;
+    padding: 1px 6px;
+    white-space: nowrap;
+  }
+  .comp-desc {
+    font-family: var(--sfpro);
+    font-size: 13px;
+    color: var(--light-indigo2);
+    line-height: 1.4;
   }
 
   @keyframes fade-up {

@@ -15,6 +15,7 @@
   import EpreuveE5 from "./lib/components/EpreuveE5.svelte";
   import Veille from "./routes/Veille.svelte";
   import EpreuveE6 from "./lib/components/EpreuveE6.svelte";
+  import Projets from "./routes/Projets.svelte";
 </script>
 
 <Router>
@@ -25,6 +26,7 @@
   <Route path="/Bloc5" component={Bloc5} />
   <Route path="/Bloc6" component={Bloc6} />
   <Route path="/Veille" component={Veille} />
+  <Route path="/Projets" component={Projets} />
 
   <Route path="/">
     <div id="root">
@@ -41,7 +43,8 @@
         </section>
         <section id="experience"><Experience /></section>
         <section id="e5"><EpreuveE5 /></section>
-        <section><EpreuveE6 /></section>
+        <section id="e6"><EpreuveE6 /></section>
+        <section id="projets"><Projets /></section>
       </main>
       <footer><Footer /></footer>
     </div>

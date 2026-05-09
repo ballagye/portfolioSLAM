@@ -4,18 +4,32 @@
   import { MoveUpRight } from "@lucide/svelte";
 
   let dialog16: HTMLDialogElement | undefined = undefined;
-  function openDialog16() { dialog16?.showModal(); }
-  function closeDialog16() { dialog16?.close(); }
+  function openDialog16() {
+    dialog16?.showModal();
+  }
+  function closeDialog16() {
+    dialog16?.close();
+  }
   let dialog17: HTMLDialogElement | undefined = undefined;
-  function openDialog17() { dialog17?.showModal(); }
-  function closeDialog17() { dialog17?.close(); }
+  function openDialog17() {
+    dialog17?.showModal();
+  }
+  function closeDialog17() {
+    dialog17?.close();
+  }
   let dialog18: HTMLDialogElement | undefined = undefined;
-  function openDialog18() { dialog18?.showModal(); }
-  function closeDialog18() { dialog18?.close(); }
+  function openDialog18() {
+    dialog18?.showModal();
+  }
+  function closeDialog18() {
+    dialog18?.close();
+  }
 </script>
 
 <div class="bloc-title">
-  <h2>/ Bloc 5 Mettre à disposition des utilisateurs un service informatique</h2>
+  <h2>
+    / Bloc 5 Mettre à disposition des utilisateurs un service informatique
+  </h2>
 </div>
 
 <div class="competences-grid">
@@ -30,10 +44,12 @@
       <h2 class="comp-title">C16</h2>
       <MoveUpRight />
     </div>
-    <h3 class="rea-title">Réaliser les tests d'intégration et d'acceptation d'un service</h3>
+    <h3 class="rea-title">
+      Réaliser les tests d'intégration et d'acceptation d'un service
+    </h3>
     <p>
-      Tests du déploiement Prometheus et Grafana via Ansible Playbook en
-      mode verbose…
+      Tests du déploiement Prometheus et Grafana via Ansible Playbook en mode
+      verbose…
     </p>
     <p class="rea-desc">Tests Ansible -- Projet personnel</p>
   </div>
@@ -49,10 +65,12 @@
       <h2 class="comp-title">C17</h2>
       <MoveUpRight />
     </div>
-    <h3 class="rea-title">Déployer un service informatique en environnement de production</h3>
+    <h3 class="rea-title">
+      Déployer un service informatique en environnement de production
+    </h3>
     <p>
-      Déploiement du script HPE, des playbooks Ansible (Prometheus & Grafana)
-      et du portfolio sur Netlify…
+      Déploiement du script HPE, des playbooks Ansible (Prometheus & Grafana) et
+      du portfolio sur Netlify…
     </p>
     <p class="rea-desc">Multi-projets — Stage Alstom & Personnel</p>
   </div>
@@ -68,7 +86,9 @@
       <h2 class="comp-title">C18</h2>
       <MoveUpRight />
     </div>
-    <h3 class="rea-title">Accompagner les utilisateurs dans la mise en place d'un service</h3>
+    <h3 class="rea-title">
+      Accompagner les utilisateurs dans la mise en place d'un service
+    </h3>
     <p>
       Rédaction d'un guide d'utilisation du script HPE et suivi des ingénieurs
       réseau lors de l'adoption du projet…
@@ -92,14 +112,22 @@
     />
     <p class="section-title">1. Déploiement Prometheus & Grafana</p>
     <ul class="tp-list">
-      <li>Lancement des Playbooks Ansible en mode <code>--verbose</code> pour suivre chaque étape</li>
-      <li>Identification et correction des erreurs de déploiement grâce aux logs</li>
+      <li>
+        Lancement des Playbooks Ansible en mode <code>--verbose</code> pour suivre
+        chaque étape
+      </li>
+      <li>
+        Identification et correction des erreurs de déploiement grâce aux logs
+      </li>
       <li>Validation finale : Prometheus et Grafana opérationnels</li>
     </ul>
 
     <p class="section-title">2. Tests d'intégration — Hackathon</p>
     <ul class="tp-list">
-      <li>Test de l'intégration des profils utilisateurs (nom, prénom, photo) dans la base de données</li>
+      <li>
+        Test de l'intégration des profils utilisateurs (nom, prénom, photo) dans
+        la base de données
+      </li>
       <li>Vérification du hachage des mots de passe côté front-end</li>
       <li>Validation du bon affichage et stockage des données</li>
     </ul>
@@ -111,16 +139,23 @@
       machine virtuelle et la vérification de l'accessibilité des hôtes. Ces
       tests ont permis de corriger les erreurs avant la mise en service finale.
     </p>
-    <ProjetAssocie projets={[
-      { nom: "Hackathon", contexte: "Formation · 2025" },
-      { nom: "Déploiement Prometheus & Grafana", contexte: "Formation · 2025" }
-    ]} />
+    <ProjetAssocie
+      projets={[
+        { nom: "Hackathon", contexte: "Formation · 2025" },
+        {
+          nom: "Déploiement Prometheus & Grafana",
+          contexte: "Formation · 2025",
+        },
+      ]}
+    />
     <div class="proof">
       <p class="proof-label">Démonstration</p>
       <div class="proof-grid">
         <div class="proof-item">
           <img src="/Screenshot_10.png" alt="Tests Ansible Playbook verbose" />
-          <p class="proof-caption">Ansible Playbook — Déploiement Prometheus & Grafana</p>
+          <p class="proof-caption">
+            Ansible Playbook — Déploiement Prometheus & Grafana
+          </p>
         </div>
         <div class="proof-item">
           <img src="/Screenshot_11.png" alt="Tests intégration hackathon" />
@@ -154,10 +189,25 @@
       contraintes techniques.
     </p>
     <ul class="tp-list">
-      <li>Déploiement du script d'automatisation HPE sur les projets ferroviaires (Turin, Cairo)</li>
-      <li>Centralisation des outils d'automatisation existants de l'équipe dans Galaxie</li>
-      <li>Écriture des playbooks Ansible pour le déploiement de Prometheus et Grafana</li>
-      <li>Déploiement du portfolio sur Netlify avec CI/CD automatique depuis GitHub</li>
+      <li>
+        Déploiement du script d'automatisation HPE sur les projets ferroviaires
+        (Turin, Cairo)
+      </li>
+      <li>
+        Centralisation des outils d'automatisation existants de l'équipe dans
+        Ansible Galaxy
+      </li>
+      <li>
+        Écriture des playbooks Ansible pour le déploiement de Prometheus et
+        Grafana
+      </li>
+      <li>
+        Déploiement du portfolio sur Netlify avec CI/CD automatique depuis
+        GitHub
+      </li>
+      <li>
+        Déploiement de MBK Education sur Azure avec WordPress
+      </li>
     </ul>
     <p class="section-title">Bilan</p>
     <p>
@@ -166,21 +216,29 @@
       modules Ansible. Le déploiement sur Netlify était simple grâce au CI/CD
       automatique depuis GitHub.
     </p>
-    <ProjetAssocie projets={[
-      { nom: "Déploiement portfolio", contexte: "Personnel · 2025" },
-      { nom: "Déploiement GLPI", contexte: "Formation · 2025" },
-      { nom: "Script d'automatisation HPE", contexte: "Stage Alstom · 2025" },
-      { nom: "Déploiement Grafana et Prometheus avec Ansible", contexte: "Formation · 2025" }
-    ]} />
+    <ProjetAssocie
+      projets={[
+        { nom: "Déploiement portfolio", contexte: "Personnel · 2025" },
+        { nom: "Déploiement GLPI", contexte: "Formation · 2025" },
+        { nom: "Script d'automatisation HPE", contexte: "Stage Alstom · 2025" },
+        { nom: "Déploiement Grafana et Prometheus avec Ansible", contexte: "Formation · 2025" },
+        { nom: "MBK Education", contexte: "Formation · 2025" },
+      ]}
+    />
     <div class="proof">
       <p class="proof-label">Démonstration</p>
       <div class="proof-grid">
         <div class="proof-item">
-          <video src="/graf-deployed.mp4" muted autoplay loop playsinline></video>
+          <video src="/graf-deployed.mp4" muted autoplay loop playsinline
+          ></video>
           <p class="proof-caption">Déploiement Grafana et Prometheus</p>
         </div>
         <div class="proof-item">
           <p class="proof-caption">Déploiement GLPI</p>
+        </div>
+        <div class="proof-item">
+          <img src="/mbkeducation_site.png" alt="MBK Education déploiement Azure" />
+          <p class="proof-caption">MBK Education — Déploiement sur Azure avec WordPress</p>
         </div>
       </div>
     </div>
@@ -205,8 +263,14 @@
       la prise en main du script d'automatisation que j'avais développé.
     </p>
     <ul class="tp-list">
-      <li>Rédaction d'un guide d'utilisation complet : fonctionnement du script, projets concernés, étapes d'utilisation</li>
-      <li>Présentation d'une vue d'ensemble du projet d'automatisation aux ingénieurs réseau</li>
+      <li>
+        Rédaction d'un guide d'utilisation complet : fonctionnement du script,
+        projets concernés, étapes d'utilisation
+      </li>
+      <li>
+        Présentation d'une vue d'ensemble du projet d'automatisation aux
+        ingénieurs réseau
+      </li>
       <li>Recueil des retours des ingénieurs sur l'outil et son utilisation</li>
       <li>Suivi de l'adoption du script par l'équipe réseau</li>
     </ul>
@@ -214,12 +278,14 @@
     <p>
       La partie la plus exigeante a été de rédiger toute la documentation de A à
       Z, en rendant le projet compréhensible pour des utilisateurs qui n'avaient
-      pas participé au développement. La documentation est confidentielle (projet
-      interne Alstom).
+      pas participé au développement. La documentation est confidentielle
+      (projet interne Alstom).
     </p>
-    <ProjetAssocie projets={[
-      { nom: "Script d'automatisation HPE", contexte: "Stage Alstom · 2025" }
-    ]} />
+    <ProjetAssocie
+      projets={[
+        { nom: "Script d'automatisation HPE", contexte: "Stage Alstom · 2025" },
+      ]}
+    />
   </div>
 </dialog>
 
@@ -229,7 +295,9 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-  h2 { font-family: var(--sfpro); }
+  h2 {
+    font-family: var(--sfpro);
+  }
   .competences-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -244,20 +312,53 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  p { margin-top: 0; margin-bottom: 10px; font-family: var(--sfpro); }
-  li { font-family: var(--sfpro); }
-  .rea-title { font-family: var(--sfpro); font-size: 20px; margin-top: 0; margin-bottom: 10px; }
-  .rea-desc { font-family: var(--ibm); color: var(--blue); }
-  .comp-title { color: var(--blue); }
-  .section-title { font-weight: 800; }
-  .valide { display: flex; align-items: center; justify-content: space-between; }
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: var(--sfpro);
+  }
+  li {
+    font-family: var(--sfpro);
+  }
+  .rea-title {
+    font-family: var(--sfpro);
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .rea-desc {
+    font-family: var(--ibm);
+    color: var(--blue);
+  }
+  .comp-title {
+    color: var(--blue);
+  }
+  .section-title {
+    font-weight: 800;
+  }
+  .valide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   @keyframes dialog-in {
-    from { opacity: 0; transform: translateY(16px) scale(0.97); }
-    to   { opacity: 1; transform: translateY(0) scale(1); }
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
   @keyframes backdrop-in {
-    from { opacity: 0; } to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   dialog {
     background: var(--dark-indigo, #1a1a2e);
@@ -270,7 +371,9 @@
     overflow: hidden;
     color: inherit;
   }
-  dialog[open] { animation: dialog-in 0.25s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  dialog[open] {
+    animation: dialog-in 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
   dialog::backdrop {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
@@ -295,14 +398,20 @@
     opacity: 0.6;
     padding: 0 0 8px 8px;
   }
-  .dialog-close:hover { opacity: 1; }
+  .dialog-close:hover {
+    opacity: 1;
+  }
   .proof {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 24px;
   }
-  .proof-label { font-family: var(--ibm); color: var(--blue); margin-bottom: 12px; }
+  .proof-label {
+    font-family: var(--ibm);
+    color: var(--blue);
+    margin-bottom: 12px;
+  }
   .proof-grid {
     display: flex;
     flex-direction: column;
@@ -315,7 +424,11 @@
     align-items: center;
     gap: 8px;
   }
-  .proof-item img, .proof-item video { max-width: 100%; border-radius: 6px; }
+  .proof-item img,
+  .proof-item video {
+    max-width: 100%;
+    border-radius: 6px;
+  }
   .proof-caption {
     font-family: var(--ibm);
     font-size: 11px;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Github, House, PenLine, FolderCode, Linkedin } from "@lucide/svelte";
+  import { Github, House, PenLine, FolderCode, Linkedin, BookOpen } from "@lucide/svelte";
   import { Command, Dialog } from "bits-ui";
   import { GraduationCap } from "@lucide/svelte";
 
@@ -98,11 +98,20 @@
                 </Command.LinkItem>
 
                 <Command.LinkItem
+                  href="./#e6"
                   class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
                   keywords={["bts", "bts sio", "sio", "epreuves", "e6", "E6"]}
                 >
                   <FolderCode class="size-4" />
                   Epreuve E6
+                </Command.LinkItem>
+                <Command.LinkItem
+                  href="/Veille"
+                  class="rounded-button data-selected:bg-muted outline-hidden flex h-10 cursor-pointer select-none items-center gap-2 px-3 py-2.5 text-sm capitalize"
+                  keywords={["veille", "technologique", "computer vision"]}
+                >
+                  <BookOpen class="size-4" />
+                  Veille Technologique
                 </Command.LinkItem>
               </Command.GroupItems>
             </Command.Group>
