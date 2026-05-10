@@ -2,6 +2,11 @@
   import { Github, Folder, ChevronDown } from "@lucide/svelte";
   import { Accordion } from "bits-ui";
 
+  function navTo(href: string) {
+    window.history.pushState({}, '', href);
+    window.dispatchEvent(new PopStateEvent('popstate'));
+  }
+
   function blocUrl(comp: string): string {
     const num = parseInt(comp.match(/C(\d+)/)?.[1] ?? '0');
     if (num <= 6) return '/Bloc1';
@@ -128,7 +133,7 @@
             <Accordion.Content class="accordion-content">
               <div class="comp-list">
                 {#each projet.competences as c}
-                  <a href={blocUrl(c)} class="comp-item">{c}</a>
+                  <a href={blocUrl(c)} class="comp-item" onclick={(e) => { e.preventDefault(); navTo(blocUrl(c)); }}>{c}</a>
                 {/each}
               </div>
             </Accordion.Content>
