@@ -160,8 +160,8 @@
           <p>Novembre 2025 - Décembre 2025</p>
           <ul>
             <li>
-              Modernisation des outils internes de en migrant le système de
-              gestion de stock d'Excel vers une application Java.
+              Modernisation des outils internes en migrant le système de gestion
+              de stock d'Excel vers une application Java.
             </li>
             <li>
               Refonte du front-end du site web vitrine en Svelte modernisant

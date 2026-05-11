@@ -46,7 +46,7 @@
     <br />
     <br />
 
-    J'ai choisi ce sujet car il est au intervient dans plusieurs domaines qui
+    J'ai choisi ce sujet car il intervient dans plusieurs domaines qui
     m'intéressent directement : le
     <span class="colored">machine learning</span>,
     <span class="colored">le traitement de données</span>
@@ -93,9 +93,8 @@
     <div>
       <h2>Thèmes</h2>
       <div class="cards">Détection d'objets</div>
-      <div class="cards">Vision Transformers</div>
+
       <div class="cards">Transports</div>
-      <div class="cards">Détection d'objets</div>
     </div>
   </div>
   <div>
