@@ -13,7 +13,7 @@
     "Python",
     "Svelte",
     "Java",
-    "WordPress",
+    "SvelteKit",
   ];
   onMount(() => {
     if (!techlist) return;
@@ -50,7 +50,13 @@
         participé à l’amélioration du site web et migré la gestion des stocks
         d’Excel vers une solution en Java.
       </p>
-      <p>Voici les technologies avec lesquelles j'ai travaillé:</p>
+      <p>
+        En parallèle, j’ai réalisé plus de <b>6 projets</b> personnels et de
+        formation couvrant le développement web, l’automatisation et la data.
+        Mon objectif à terme est de me spécialiser en <b>MLOps</b> — l’automatisation
+        appliquée au machine learning.
+      </p>
+      <p>Voici les technologies avec lesquelles j’ai travaillé:</p>
       <ul bind:this={techlist} class="tech-stack">
         {#each techs as tech}
           {#if visible}

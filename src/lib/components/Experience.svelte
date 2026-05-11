@@ -4,8 +4,8 @@
   import { ChevronDown } from "@lucide/svelte";
 
   function navTo(href: string) {
-    window.history.pushState({}, '', href);
-    window.dispatchEvent(new PopStateEvent('popstate'));
+    window.history.pushState({}, "", href);
+    window.dispatchEvent(new PopStateEvent("popstate"));
   }
 
   const compAlstom = [
@@ -98,10 +98,7 @@
               département Network & IT, contribuant à l’automatisation des
               tâches manuelles.
             </li>
-            <li>
-              Développé un script Python permettant la configuration automatique
-              de switches HPE sur l'ensemble du projet ferroviaire.
-            </li>
+
             <li>
               Conception et développement d’un script Python permettant la
               configuration automatique de switchs HPE sur l’ensemble d’un
@@ -132,7 +129,14 @@
               <Accordion.Content class="acc-content">
                 <div class="comp-list">
                   {#each compAlstom as g}
-                    <a href={g.href} class="comp-item" onclick={(e) => { e.preventDefault(); navTo(g.href); }}>
+                    <a
+                      href={g.href}
+                      class="comp-item"
+                      onclick={(e) => {
+                        e.preventDefault();
+                        navTo(g.href);
+                      }}
+                    >
                       <span class="comp-tags">
                         {#each g.tags as t}<span class="comp-tag">{t}</span
                           >{/each}
@@ -163,12 +167,7 @@
               Refonte du front-end du site web vitrine en Svelte modernisant
               l'éxperience utilisateur
             </li>
-            <li></li>
-            <li>
-              Développement d'un tableau de bord permettant au personnel de
-              visualiser les commandes.
-            </li>
-            <li></li>
+            <li>Etude des ajouts possible sur le site web de l'entreprise</li>
           </ul>
           <Accordion.Root type="single" class="acc-root">
             <Accordion.Item value="comp">
@@ -181,7 +180,14 @@
               <Accordion.Content class="acc-content">
                 <div class="comp-list">
                   {#each compSaigon as g}
-                    <a href={g.href} class="comp-item" onclick={(e) => { e.preventDefault(); navTo(g.href); }}>
+                    <a
+                      href={g.href}
+                      class="comp-item"
+                      onclick={(e) => {
+                        e.preventDefault();
+                        navTo(g.href);
+                      }}
+                    >
                       <span class="comp-tags">
                         {#each g.tags as t}<span class="comp-tag">{t}</span
                           >{/each}

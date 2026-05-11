@@ -34,13 +34,14 @@
       <main class="App">
         <section id="intro">
           <div><Intro /></div>
+          <section id="about">
+            <div><About /></div>
+          </section>
           <section id="bts-sio">
             <div><BtsSection /></div>
           </section>
         </section>
-        <section id="about">
-          <div><About /></div>
-        </section>
+
         <section id="experience"><Experience /></section>
         <section id="e5"><EpreuveE5 /></section>
         <section id="e6"><EpreuveE6 /></section>
