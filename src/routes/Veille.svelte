@@ -85,7 +85,7 @@
       <ul class="source">
         <li>
           Médias spécialisés : LeMagIT, L'Usine Digitale, Viso.ai, Ultralytics
-          Blog.
+          Blog. Rady Magazine
         </li>
         <li>Réseaux : LinkedIn, X.</li>
       </ul>
